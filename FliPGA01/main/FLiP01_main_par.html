@@ -1,317 +1,0 @@
-<HTML>
-<HEAD><TITLE>Place & Route Report</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="Par"></A>PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Nov 02 11:34:24 2024
-
-C:/lscc/diamond/3.13/ispfpga\bin\nt64\par -f FLiP01_main.p2t
-FLiP01_main_map.ncd FLiP01_main.dir FLiP01_main.prf -gui -msgset
-C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/promote.xml
-
-
-Preference file: FLiP01_main.prf.
-
-<A name="par_cts"></A><B><U><big>Cost Table Summary</big></U></B>
-Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
-Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
-----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -            -            -            -            15           Completed
-* : Design saved.
-
-Total (real) run time for 1-seed: 16 secs 
-
-par done!
-
-Note: user must run &apos;Trace&apos; for timing closure signoff.
-
-Lattice Place and Route Report for Design &quot;FLiP01_main_map.ncd&quot;
-Sat Nov 02 11:34:24 2024
-
-
-<A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
-PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 FLiP01_main_map.ncd FLiP01_main.dir/5_1.ncd FLiP01_main.prf
-Preference file: FLiP01_main.prf.
-Placement level-cost: 5-1.
-Routing Iterations: 6
-
-Loading design for application par from file FLiP01_main_map.ncd.
-Design name: FLIP
-NCD version: 3.3
-Vendor:      LATTICE
-Device:      LCMXO2-7000HE
-Package:     TQFP144
-Performance: 4
-Loading device for application par from file &apos;xo2c7000.nph&apos; in environment: C:/lscc/diamond/3.13/ispfpga.
-Package Status:                     Final          Version 1.39.
-Performance Hardware Data Status:   Final          Version 34.4.
-License checked out.
-
-
-Ignore Preference Error(s):  True
-
-<A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
-
-   PIO (prelim)   43+4(JTAG)/336     14% used
-                  43+4(JTAG)/115     41% bonded
-
-   SLICE            462/3432         13% used
-
-   GSR                1/1           100% used
-
-
-Number of Signals: 1210
-Number of Connections: 4207
-
-Pin Constraint Summary:
-   35 out of 43 pins locked (81% locked).
-
-The following 2 signals are selected to use the primary clock routing resources:
-    clk (driver: SLICE_162, clk load #: 70)
-    CLKin (driver: ISA/SLICE_449, clk load #: 60)
-
-
-The following 2 signals are selected to use the secondary clock routing resources:
-    n2067 (driver: SLICE_368, clk load #: 0, sr load #: 13, ce load #: 0)
-    CLKin_enable_84 (driver: SLICE_440, clk load #: 0, sr load #: 0, ce load #: 10)
-
-Signal reset_c is selected as Global Set/Reset.
-.
-Starting Placer Phase 0.
-..............
-Finished Placer Phase 0.  REAL time: 3 secs 
-
-Starting Placer Phase 1.
-....................
-Placer score = 230252.
-Finished Placer Phase 1.  REAL time: 8 secs 
-
-Starting Placer Phase 2.
-.
-Placer score =  229389
-Finished Placer Phase 2.  REAL time: 8 secs 
-
-
-
-<A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
-
-Global Clock Resources:
-  CLK_PIN    : 0 out of 8 (0%)
-  PLL        : 0 out of 2 (0%)
-  DCM        : 0 out of 2 (0%)
-  DCC        : 0 out of 8 (0%)
-
-Global Clocks:
-  PRIMARY &quot;clk&quot; from Q0 on comp &quot;SLICE_162&quot; on site &quot;R2C19D&quot;, clk load = 70
-  PRIMARY &quot;CLKin&quot; from F1 on comp &quot;ISA/SLICE_449&quot; on site &quot;R21C2D&quot;, clk load = 60
-  SECONDARY &quot;n2067&quot; from F1 on comp &quot;SLICE_368&quot; on site &quot;R21C20C&quot;, clk load = 0, ce load = 0, sr load = 13
-  SECONDARY &quot;CLKin_enable_84&quot; from F0 on comp &quot;SLICE_440&quot; on site &quot;R14C20B&quot;, clk load = 0, ce load = 10, sr load = 0
-
-  PRIMARY  : 2 out of 8 (25%)
-  SECONDARY: 2 out of 8 (25%)
-
-Edge Clocks:
-  No edge clock selected.
-
-
-
-
-I/O Usage Summary (final):
-   43 + 4(JTAG) out of 336 (14.0%) PIO sites used.
-   43 + 4(JTAG) out of 115 (40.9%) bonded PIO sites used.
-   Number of PIO comps: 43; differential: 0.
-   Number of Vref pins used: 0.
-
-I/O Bank Usage Summary:
-+----------+----------------+------------+-----------+
-| I/O Bank | Usage          | Bank Vccio | Bank Vref |
-+----------+----------------+------------+-----------+
-| 0        | 6 / 28 ( 21%)  | 2.5V       | -         |
-| 1        | 10 / 29 ( 34%) | 2.5V       | -         |
-| 2        | 18 / 29 ( 62%) | 2.5V       | -         |
-| 3        | 2 / 9 ( 22%)   | 2.5V       | -         |
-| 4        | 1 / 10 ( 10%)  | 2.5V       | -         |
-| 5        | 6 / 10 ( 60%)  | 2.5V       | -         |
-+----------+----------------+------------+-----------+
-
-Total placer CPU time: 5 secs 
-
-Dumping design to file FLiP01_main.dir/5_1.ncd.
-
-
------------------------------------------------------------------
-INFO - par: ASE feature is off due to non timing-driven settings.  
------------------------------------------------------------------
-
-0 connections routed; 4207 unrouted.
-Starting router resource preassignment
-
-WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
-   Signal=Q_N_343 loads=2 clock_loads=1
-   Signal=Q_N_343_adj_500 loads=2 clock_loads=1
-
-Completed router resource preassignment. Real time: 12 secs 
-
-Start NBR router at 11:34:36 11/02/24
-
-*****************************************************************
-Info: NBR allows conflicts(one node used by more than one signal)
-      in the earlier iterations. In each iteration, it tries to  
-      solve the conflicts while keeping the critical connections 
-      routed as short as possible. The routing process is said to
-      be completed when no conflicts exist and all connections   
-      are routed.                                                
-Note: NBR uses a different method to calculate timing slacks. The
-      worst slack and total negative slack may not be the same as
-      that in TRCE report. You should always run TRCE to verify  
-      your design.                                               
-*****************************************************************
-
-Start NBR special constraint process at 11:34:36 11/02/24
-
-Start NBR section for initial routing at 11:34:36 11/02/24
-Level 4, iteration 1
-88(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
-
-Info: Initial congestion level at 75% usage is 0
-Info: Initial congestion area  at 75% usage is 0 (0.00%)
-
-Start NBR section for normal routing at 11:34:38 11/02/24
-Level 4, iteration 1
-42(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
-Level 4, iteration 2
-18(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
-Level 4, iteration 3
-6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
-Level 4, iteration 4
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
-Level 4, iteration 5
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
-
-Start NBR section for re-routing at 11:34:38 11/02/24
-Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
-
-Start NBR section for post-routing at 11:34:38 11/02/24
-
-End NBR router with 0 unrouted connection
-
-NBR Summary
------------
-  Number of unrouted connections : 0 (0.00%)
-  Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack&lt;setup&gt; : &lt;n/a&gt;
-  Timing score&lt;setup&gt; : 0
------------
-Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
-
-
-
-WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
-   Signal=Q_N_343 loads=2 clock_loads=1
-   Signal=Q_N_343_adj_500 loads=2 clock_loads=1
-
-Total CPU time 9 secs 
-Total REAL time: 14 secs 
-Completely routed.
-End of route.  4207 routed (100.00%); 0 unrouted.
-
-5 potential circuit loops found in timing analysis.
-5 potential circuit loops found in timing analysis.
-Hold time timing score: 0, hold timing errors: 0
-
-5 potential circuit loops found in timing analysis.
-Timing score: 0 
-
-Dumping design to file FLiP01_main.dir/5_1.ncd.
-
-
-All signals are completely routed.
-
-
-PAR_SUMMARY::Run status = Completed
-PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = &lt;n/a&gt;
-PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = &lt;n/a&gt;
-PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
-PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
-PAR_SUMMARY::Number of errors = 0
-
-Total CPU  time to completion: 10 secs 
-Total REAL time to completion: 16 secs 
-
-par done!
-
-Note: user must run &apos;Trace&apos; for timing closure signoff.
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>
