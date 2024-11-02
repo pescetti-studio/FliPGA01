@@ -3,7 +3,7 @@
 *This project involves the implementation of the 8-bit CPU Flip01 on a Lattice Semiconductor MachXO2 FPGA board, using the software Lattice Diamond.*
 
 Flip01 is a small 8-bit processor designed by us and developed at the logic level, featuring an Harvard architecture. The entire project is free and open source. </br> 
-All files mentioned are available on [GitHub](https://github.com/pescetti-studio/Flip01-CPU) and on [Patreon](https://www.patreon.com/c/PescettiStudio) (_for free_). </br>
+All files mentioned are available on [GitHub](https://github.com/pescetti-studio) and on [Patreon](https://www.patreon.com/c/PescettiStudio) (_for free_). </br>
 For more details, here is an extremely simple guide to [Flip01](https://medium.com/@biasolo.riccardo/flip01-a-simple-yet-versatile-8-bit-cpu-fc01c36d5922).
 
 FPGA (Field Programmable Gate Array) is a type of technology used to design custom digital circuits. Unlike traditional chips, which have a fixed design, FPGAs can be reprogrammed after manufacturing to perform different tasks. This flexibility allows engineers to create hardware tailored to specific applications. FPGAs offer a balance between the flexibility of software and the performance of hardware.
@@ -43,7 +43,7 @@ After installing the Diamond development environment, you can now finally start 
 *Your first code example on FLiPGA01 consists of connecting the AX register to a vector of 8 on-chip LEDs to display its current value. The program creates an animation that gradually fills up the LED bar, visually representing the values in the AX register over time. At the end of the animation, an external LED turns on to indicate completion.*
 
 **1. Translate the assembly code into machine code**
-First, you need to open the led_charging.txt file, where there is the assembly code, into the Flip01 assembler (you can find it into [Flip01](https://github.com/pescetti-studio/Flip01-CPU) repository). This will generate the machine code, which will be loaded into the MEM1 and MEM2 memories of CPU.
+First, you need to open the [led_charging.txt](https://github.com/pescetti-studio/FlipGA01/blob/main/FlipGA01/led_charging.txt) file, where there is the assembly code, into the Flip01 assembler (you can find it into [Flip01](https://github.com/pescetti-studio/Flip01-CPU) repository). This will generate the machine code, which will be loaded into the MEM1 and MEM2 memories of CPU.
 
 ![IMAGE1](https://github.com/user-attachments/assets/88b5ca6d-c356-484e-8c51-1335b8dd51ff)
 > Machine code to copy to the memories files
