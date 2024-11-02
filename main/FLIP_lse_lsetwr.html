@@ -1,0 +1,530 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sat Nov 02 10:57:49 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     FLIP
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets clk]
+            24 items scored, 16 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 6.117ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \register_select/A_11  (from clk +)
+   Destination:    FD1P3BX    PD             \flipflop1/Q_9_1404_1405_set  (to clk +)
+
+   Delay:                  10.957ns  (26.5% logic, 73.5% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.957ns data_path \register_select/A_11 to \flipflop1/Q_9_1404_1405_set violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 6.117ns
+
+ Path Details: \register_select/A_11 to \flipflop1/Q_9_1404_1405_set
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \register_select/A_11 (from clk)
+Route         1   e 0.941                                  AX_sel
+LUT4        ---     0.493              C to Z              i4_4_lut
+Route         2   e 1.141                                  ie_AX_N_9
+LUT4        ---     0.493              A to Z              i1_4_lut
+Route         8   e 1.540                                  int2
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_adj_36
+Route         3   e 1.258                                  n6999
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_rep_147_4_lut
+Route        26   e 2.027                                  n8226
+LUT4        ---     0.493              D to Z              i2_3_lut_4_lut
+Route         2   e 1.141                                  Q_N_343
+                  --------
+                   10.957  (26.5% logic, 73.5% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 6.117ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \register_select/A_11  (from clk +)
+   Destination:    FD1P3BX    PD             \flipflop2/Q_9_1408_1409_set  (to clk +)
+
+   Delay:                  10.957ns  (26.5% logic, 73.5% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.957ns data_path \register_select/A_11 to \flipflop2/Q_9_1408_1409_set violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 6.117ns
+
+ Path Details: \register_select/A_11 to \flipflop2/Q_9_1408_1409_set
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \register_select/A_11 (from clk)
+Route         1   e 0.941                                  AX_sel
+LUT4        ---     0.493              C to Z              i4_4_lut
+Route         2   e 1.141                                  ie_AX_N_9
+LUT4        ---     0.493              A to Z              i1_4_lut
+Route         8   e 1.540                                  int2
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_adj_36
+Route         3   e 1.258                                  n6999
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_rep_147_4_lut
+Route        26   e 2.027                                  n8226
+LUT4        ---     0.493              C to Z              \controllerIO/demuxOut/i4_4_lut
+Route         2   e 1.141                                  Q_N_343_adj_500
+                  --------
+                   10.957  (26.5% logic, 73.5% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 6.062ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \register_select/A_11  (from clk +)
+   Destination:    FD1P3BX    PD             \flipflop1/Q_9_1404_1405_set  (to clk +)
+
+   Delay:                  10.902ns  (26.7% logic, 73.3% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.902ns data_path \register_select/A_11 to \flipflop1/Q_9_1404_1405_set violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 6.062ns
+
+ Path Details: \register_select/A_11 to \flipflop1/Q_9_1404_1405_set
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \register_select/A_11 (from clk)
+Route         1   e 0.941                                  AX_sel
+LUT4        ---     0.493              C to Z              i4_4_lut
+Route         2   e 1.141                                  ie_AX_N_9
+LUT4        ---     0.493              A to Z              i1_4_lut
+Route         8   e 1.540                                  int2
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut
+Route         5   e 1.405                                  n7006
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_rep_141_4_lut
+Route        19   e 1.825                                  n8220
+LUT4        ---     0.493              A to Z              i2_3_lut_4_lut
+Route         2   e 1.141                                  Q_N_343
+                  --------
+                   10.902  (26.7% logic, 73.3% route), 6 logic levels.
+
+Warning: 11.117 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets CLKin]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 25.588ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \uPC/q_i0_i6  (from CLKin +)
+   Destination:    FD1P3AX    D              \FLAG/q_i0_i0  (to CLKin +)
+
+   Delay:                  30.428ns  (31.9% logic, 68.1% route), 22 logic levels.
+
+ Constraint Details:
+
+     30.428ns data_path \uPC/q_i0_i6 to \FLAG/q_i0_i0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 25.588ns
+
+ Path Details: \uPC/q_i0_i6 to \FLAG/q_i0_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \uPC/q_i0_i6 (from CLKin)
+Route        37   e 2.105                                  out_uPC[6]
+LUT4        ---     0.493              A to Z              \ISA/address_7__I_0_103_i13_2_lut_rep_244
+Route         8   e 1.540                                  \ISA/n8323
+LUT4        ---     0.493              B to Z              \ISA/i3309_2_lut_3_lut_4_lut
+Route         2   e 1.141                                  n3945
+LUT4        ---     0.493              A to Z              \ISA/i1_4_lut_adj_114
+Route         3   e 1.258                                  \ISA/n4162
+LUT4        ---     0.493              A to Z              \ISA/i1_4_lut
+Route         2   e 1.141                                  n4184
+LUT4        ---     0.493              D to Z              \ISA/i2_2_lut_4_lut
+Route         1   e 0.941                                  \ISA/n6
+LUT4        ---     0.493              B to Z              \ISA/i3_4_lut_adj_130
+Route         3   e 1.258                                  n4186
+LUT4        ---     0.493              B to Z              i1_4_lut
+Route         8   e 1.540                                  int2
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_adj_36
+Route         3   e 1.258                                  n6999
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_rep_147_4_lut
+Route        26   e 2.027                                  n8226
+A1_TO_FCO   ---     0.827           A[2] to COUT           \ALU/A_7__I_0_96_add_2_1
+Route         1   e 0.020                                  \ALU/n6107
+FCI_TO_FCO  ---     0.157            CIN to COUT           \ALU/A_7__I_0_96_add_2_3
+Route         1   e 0.020                                  \ALU/n6108
+FCI_TO_FCO  ---     0.157            CIN to COUT           \ALU/A_7__I_0_96_add_2_5
+Route         1   e 0.020                                  \ALU/n6109
+FCI_TO_FCO  ---     0.157            CIN to COUT           \ALU/A_7__I_0_96_add_2_7
+Route         1   e 0.020                                  \ALU/n6110
+FCI_TO_F    ---     0.598            CIN to S[2]           \ALU/A_7__I_0_96_add_2_9
+Route         2   e 1.486                                  Result_7__N_130[7]
+LUT4        ---     0.493              C to Z              \ISA/i76_3_lut_4_lut_adj_155
+Route         1   e 0.020                                  n51_adj_517
+MUXL5       ---     0.233           ALUT to Z              \ALU/i77
+Route         1   e 0.941                                  \ALU/n45_adj_410
+LUT4        ---     0.493              B to Z              \ALU/i1_4_lut_4_lut_adj_70
+Route         1   e 0.020                                  \ALU/n54
+MUXL5       ---     0.233           BLUT to Z              \ALU/i78
+Route         2   e 1.141                                  \ALU/n48
+LUT4        ---     0.493              D to Z              \ALU/i6591_4_lut
+Route         1   e 0.941                                  n7279
+LUT4        ---     0.493              C to Z              \ISA/i6620_3_lut_4_lut
+Route         1   e 0.941                                  n7314
+LUT4        ---     0.493              D to Z              \ALU/i1_4_lut_4_lut_adj_91
+Route         1   e 0.941                                  flag[0]
+                  --------
+                   30.428  (31.9% logic, 68.1% route), 22 logic levels.
+
+
+Error:  The following path violates requirements by 25.578ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \uPC/q_i0_i7  (from CLKin +)
+   Destination:    FD1P3AX    D              \FLAG/q_i0_i0  (to CLKin +)
+
+   Delay:                  30.418ns  (31.9% logic, 68.1% route), 22 logic levels.
+
+ Constraint Details:
+
+     30.418ns data_path \uPC/q_i0_i7 to \FLAG/q_i0_i0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 25.578ns
+
+ Path Details: \uPC/q_i0_i7 to \FLAG/q_i0_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \uPC/q_i0_i7 (from CLKin)
+Route        31   e 2.095                                  out_uPC[7]
+LUT4        ---     0.493              B to Z              \ISA/address_7__I_0_103_i13_2_lut_rep_244
+Route         8   e 1.540                                  \ISA/n8323
+LUT4        ---     0.493              B to Z              \ISA/i3309_2_lut_3_lut_4_lut
+Route         2   e 1.141                                  n3945
+LUT4        ---     0.493              A to Z              \ISA/i1_4_lut_adj_114
+Route         3   e 1.258                                  \ISA/n4162
+LUT4        ---     0.493              A to Z              \ISA/i1_4_lut
+Route         2   e 1.141                                  n4184
+LUT4        ---     0.493              D to Z              \ISA/i2_2_lut_4_lut
+Route         1   e 0.941                                  \ISA/n6
+LUT4        ---     0.493              B to Z              \ISA/i3_4_lut_adj_130
+Route         3   e 1.258                                  n4186
+LUT4        ---     0.493              B to Z              i1_4_lut
+Route         8   e 1.540                                  int2
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_adj_36
+Route         3   e 1.258                                  n6999
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_rep_147_4_lut
+Route        26   e 2.027                                  n8226
+A1_TO_FCO   ---     0.827           A[2] to COUT           \ALU/A_7__I_0_96_add_2_1
+Route         1   e 0.020                                  \ALU/n6107
+FCI_TO_FCO  ---     0.157            CIN to COUT           \ALU/A_7__I_0_96_add_2_3
+Route         1   e 0.020                                  \ALU/n6108
+FCI_TO_FCO  ---     0.157            CIN to COUT           \ALU/A_7__I_0_96_add_2_5
+Route         1   e 0.020                                  \ALU/n6109
+FCI_TO_FCO  ---     0.157            CIN to COUT           \ALU/A_7__I_0_96_add_2_7
+Route         1   e 0.020                                  \ALU/n6110
+FCI_TO_F    ---     0.598            CIN to S[2]           \ALU/A_7__I_0_96_add_2_9
+Route         2   e 1.486                                  Result_7__N_130[7]
+LUT4        ---     0.493              C to Z              \ISA/i76_3_lut_4_lut_adj_155
+Route         1   e 0.020                                  n51_adj_517
+MUXL5       ---     0.233           ALUT to Z              \ALU/i77
+Route         1   e 0.941                                  \ALU/n45_adj_410
+LUT4        ---     0.493              B to Z              \ALU/i1_4_lut_4_lut_adj_70
+Route         1   e 0.020                                  \ALU/n54
+MUXL5       ---     0.233           BLUT to Z              \ALU/i78
+Route         2   e 1.141                                  \ALU/n48
+LUT4        ---     0.493              D to Z              \ALU/i6591_4_lut
+Route         1   e 0.941                                  n7279
+LUT4        ---     0.493              C to Z              \ISA/i6620_3_lut_4_lut
+Route         1   e 0.941                                  n7314
+LUT4        ---     0.493              D to Z              \ALU/i1_4_lut_4_lut_adj_91
+Route         1   e 0.941                                  flag[0]
+                  --------
+                   30.418  (31.9% logic, 68.1% route), 22 logic levels.
+
+
+Error:  The following path violates requirements by 25.470ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \uPC/q_i0_i6  (from CLKin +)
+   Destination:    FD1P3AX    D              \FLAG/q_i0_i0  (to CLKin +)
+
+   Delay:                  30.310ns  (32.0% logic, 68.0% route), 22 logic levels.
+
+ Constraint Details:
+
+     30.310ns data_path \uPC/q_i0_i6 to \FLAG/q_i0_i0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 25.470ns
+
+ Path Details: \uPC/q_i0_i6 to \FLAG/q_i0_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \uPC/q_i0_i6 (from CLKin)
+Route        37   e 2.105                                  out_uPC[6]
+LUT4        ---     0.493              A to Z              \ISA/i1_2_lut_rep_206_3_lut_4_lut
+Route        18   e 1.822                                  n8285
+LUT4        ---     0.493              C to Z              \ISA/i3199_4_lut
+Route         3   e 1.258                                  \ISA/n3835
+LUT4        ---     0.493              B to Z              \ISA/i1_2_lut_adj_129
+Route         1   e 0.941                                  \ISA/n5
+LUT4        ---     0.493              A to Z              \ISA/i3_4_lut
+Route         3   e 1.258                                  \ISA/n7011
+LUT4        ---     0.493              D to Z              \ISA/i6544_2_lut_3_lut_4_lut
+Route         1   e 0.941                                  \ISA/n7225
+LUT4        ---     0.493              B to Z              \ISA/i2_4_lut_adj_128
+Route         8   e 1.540                                  control_signal[33]
+LUT4        ---     0.493              D to Z              \controllerIO/bufferIn/i1_4_lut_adj_37
+Route         1   e 0.941                                  \controllerIO/bufferIn/n4_adj_347
+LUT4        ---     0.493              B to Z              \controllerIO/bufferIn/i2_3_lut_adj_36
+Route         3   e 1.258                                  n6999
+LUT4        ---     0.493              C to Z              \controllerIO/bufferIn/i2_3_lut_rep_147_4_lut
+Route        26   e 2.027                                  n8226
+A1_TO_FCO   ---     0.827           A[2] to COUT           \ALU/A_7__I_0_96_add_2_1
+Route         1   e 0.020                                  \ALU/n6107
+FCI_TO_FCO  ---     0.157            CIN to COUT           \ALU/A_7__I_0_96_add_2_3
+Route         1   e 0.020                                  \ALU/n6108
+FCI_TO_FCO  ---     0.157            CIN to COUT           \ALU/A_7__I_0_96_add_2_5
+Route         1   e 0.020                                  \ALU/n6109
+FCI_TO_FCO  ---     0.157            CIN to COUT           \ALU/A_7__I_0_96_add_2_7
+Route         1   e 0.020                                  \ALU/n6110
+FCI_TO_F    ---     0.598            CIN to S[2]           \ALU/A_7__I_0_96_add_2_9
+Route         2   e 1.486                                  Result_7__N_130[7]
+LUT4        ---     0.493              C to Z              \ISA/i76_3_lut_4_lut_adj_155
+Route         1   e 0.020                                  n51_adj_517
+MUXL5       ---     0.233           ALUT to Z              \ALU/i77
+Route         1   e 0.941                                  \ALU/n45_adj_410
+LUT4        ---     0.493              B to Z              \ALU/i1_4_lut_4_lut_adj_70
+Route         1   e 0.020                                  \ALU/n54
+MUXL5       ---     0.233           BLUT to Z              \ALU/i78
+Route         2   e 1.141                                  \ALU/n48
+LUT4        ---     0.493              D to Z              \ALU/i6591_4_lut
+Route         1   e 0.941                                  n7279
+LUT4        ---     0.493              C to Z              \ISA/i6620_3_lut_4_lut
+Route         1   e 0.941                                  n7314
+LUT4        ---     0.493              D to Z              \ALU/i1_4_lut_4_lut_adj_91
+Route         1   e 0.941                                  flag[0]
+                  --------
+                   30.310  (32.0% logic, 68.0% route), 22 logic levels.
+
+Warning: 30.588 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk]                     |     5.000 ns|    11.117 ns|     6 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets CLKin]                   |     5.000 ns|    30.588 ns|    22 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+flag[0]                                 |       1|    4092|     99.51%
+                                        |        |        |
+n7314                                   |       1|    3827|     93.07%
+                                        |        |        |
+\ISA/n7225                              |       1|    2549|     61.99%
+                                        |        |        |
+control_signal[33]                      |       8|    2549|     61.99%
+                                        |        |        |
+\ISA/n7011                              |       3|    2530|     61.53%
+                                        |        |        |
+\ISA/n5                                 |       1|    2012|     48.93%
+                                        |        |        |
+n7279                                   |       1|    2011|     48.91%
+                                        |        |        |
+n7281                                   |       1|    1816|     44.16%
+                                        |        |        |
+n8226                                   |      26|    1437|     34.95%
+                                        |        |        |
+int2                                    |       8|    1387|     33.73%
+                                        |        |        |
+\ISA/n6                                 |       1|    1379|     33.54%
+                                        |        |        |
+n4184                                   |       2|    1379|     33.54%
+                                        |        |        |
+n4186                                   |       3|    1379|     33.54%
+                                        |        |        |
+n6999                                   |       3|    1376|     33.46%
+                                        |        |        |
+n1501                                   |      11|    1267|     30.81%
+                                        |        |        |
+\ALU/n6108                              |       1|    1162|     28.26%
+                                        |        |        |
+\ALU/n6109                              |       1|    1130|     27.48%
+                                        |        |        |
+\ISA/n3835                              |       3|    1044|     25.39%
+                                        |        |        |
+\ALU/n48                                |       2|     998|     24.27%
+                                        |        |        |
+\ISA/n3781                              |       2|     968|     23.54%
+                                        |        |        |
+\controllerIO/bufferIn/n4_adj_347       |       1|     893|     21.72%
+                                        |        |        |
+n8225                                   |       8|     863|     20.99%
+                                        |        |        |
+n7004                                   |       3|     823|     20.01%
+                                        |        |        |
+n6                                      |       1|     756|     18.39%
+                                        |        |        |
+n8303                                   |       6|     756|     18.39%
+                                        |        |        |
+Result_7__N_130[7]                      |       2|     679|     16.51%
+                                        |        |        |
+\ALU/n45_adj_410                        |       1|     679|     16.51%
+                                        |        |        |
+\ALU/n54                                |       1|     679|     16.51%
+                                        |        |        |
+\ISA/n4162                              |       3|     679|     16.51%
+                                        |        |        |
+n51_adj_517                             |       1|     679|     16.51%
+                                        |        |        |
+n8208                                   |       4|     661|     16.07%
+                                        |        |        |
+\ALU/n6110                              |       1|     640|     15.56%
+                                        |        |        |
+out_uPC[6]                              |      37|     618|     15.03%
+                                        |        |        |
+out_uPC[7]                              |      31|     617|     15.00%
+                                        |        |        |
+\ISA/n4                                 |       1|     612|     14.88%
+                                        |        |        |
+\ISA/n7150                              |       1|     596|     14.49%
+                                        |        |        |
+n8285                                   |      18|     586|     14.25%
+                                        |        |        |
+\ALU/n6107                              |       1|     562|     13.67%
+                                        |        |        |
+n11                                     |       8|     556|     13.52%
+                                        |        |        |
+\ALU/n48_adj_385                        |       2|     549|     13.35%
+                                        |        |        |
+\ALU/n48_adj_402                        |       2|     546|     13.28%
+                                        |        |        |
+\controllerIO/bufferIn/n4_adj_348       |       1|     523|     12.72%
+                                        |        |        |
+n3945                                   |       2|     513|     12.48%
+                                        |        |        |
+n8220                                   |      19|     445|     10.82%
+                                        |        |        |
+n7006                                   |       5|     441|     10.72%
+                                        |        |        |
+n3837                                   |      16|     430|     10.46%
+                                        |        |        |
+\ALU/n48_adj_404                        |       2|     424|     10.31%
+                                        |        |        |
+\ALU/n48_adj_387                        |       2|     422|     10.26%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 4112  Score: 96737657
+
+Constraints cover  386970 paths, 930 nets, and 2839 connections (80.9% coverage)
+
+
+Peak memory: 94494720 bytes, TRCE: 11710464 bytes, DLYMAN: 327680 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

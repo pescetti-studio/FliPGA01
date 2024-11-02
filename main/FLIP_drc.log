@@ -1,0 +1,32 @@
+Results of NGD DRC are available in FLIP_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'in1[7]' has no load.
+WARNING - synthesis: input pad net 'in1[7]' has no legal load.
+WARNING - synthesis: logical net 'in1[6]' has no load.
+WARNING - synthesis: input pad net 'in1[6]' has no legal load.
+WARNING - synthesis: logical net 'in1[5]' has no load.
+WARNING - synthesis: input pad net 'in1[5]' has no legal load.
+WARNING - synthesis: logical net 'in1[4]' has no load.
+WARNING - synthesis: input pad net 'in1[4]' has no legal load.
+WARNING - synthesis: logical net 'in1[3]' has no load.
+WARNING - synthesis: input pad net 'in1[3]' has no legal load.
+WARNING - synthesis: logical net 'in1[2]' has no load.
+WARNING - synthesis: input pad net 'in1[2]' has no legal load.
+WARNING - synthesis: logical net 'in1[1]' has no load.
+WARNING - synthesis: input pad net 'in1[1]' has no legal load.
+WARNING - synthesis: logical net 'in1[0]' has no load.
+WARNING - synthesis: input pad net 'in1[0]' has no legal load.
+WARNING - synthesis: DRC complete with 16 warnings.
+
+Design Results:
+    994 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FLiP01_main.ngd.

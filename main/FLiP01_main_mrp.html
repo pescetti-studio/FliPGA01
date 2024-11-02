@@ -1,0 +1,658 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+             Lattice Mapping Report File for Design Module 'FLIP'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     FLiP01_main.ngd -o FLiP01_main_map.ncd -pr FLiP01_main.prf -mp
+     FLiP01_main.mrp -lpf
+     C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/main/FLiP01_main.lpf -lpf
+     C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/FLiP01.lpf -c 0 -gui -msgset
+     C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  11/02/24  11:34:22
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    118 out of  7209 (2%)
+      PFU registers:          118 out of  6864 (2%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:       462 out of  3432 (13%)
+      SLICEs as Logic/ROM:    366 out of  3432 (11%)
+      SLICEs as RAM:           96 out of  2574 (4%)
+      SLICEs as Carry:         49 out of  3432 (1%)
+   Number of LUT4s:        922 out of  6864 (13%)
+      Number used as logic LUTs:        632
+      Number used as distributed RAM:   192
+      Number used as ripple logic:       98
+      Number used as shift registers:     0
+   Number of PIO sites used: 43 + 4(JTAG) out of 115 (41%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  4
+     Net CLKin: 60 loads, 60 rising, 0 falling (Driver: ISA/i787_3_lut_4_lut )
+     Net clk: 70 loads, 70 rising, 0 falling (Driver: clk_div/clk_out_12 )
+
+     Net Q_N_343: 1 loads, 1 rising, 0 falling (Driver: i2_3_lut_4_lut )
+     Net Q_N_343_adj_500: 1 loads, 1 rising, 0 falling (Driver:
+     controllerIO/demuxOut/i4_4_lut )
+   Number of Clock Enables:  13
+     Net CLKin_enable_31: 4 loads, 4 LSLICEs
+     Net CLKin_enable_50: 4 loads, 4 LSLICEs
+     Net CLKin_enable_71: 5 loads, 5 LSLICEs
+     Net CLKin_enable_38: 4 loads, 4 LSLICEs
+     Net CLKin_enable_64: 4 loads, 4 LSLICEs
+     Net CLKin_enable_57: 4 loads, 4 LSLICEs
+     Net CLKin_enable_26: 3 loads, 3 LSLICEs
+     Net CLKin_enable_78: 4 loads, 4 LSLICEs
+     Net CLKin_enable_20: 4 loads, 4 LSLICEs
+     Net CLKin_enable_84: 10 loads, 10 LSLICEs
+     Net register_select/A_N_337: 2 loads, 2 LSLICEs
+     Net flipflop2/clk_enable_1: 2 loads, 2 LSLICEs
+     Net flipflop1/clk_enable_4: 2 loads, 2 LSLICEs
+   Number of LSRs:  6
+     Net n2067: 13 loads, 13 LSLICEs
+     Net Q_N_343: 1 loads, 1 LSLICEs
+     Net out1_0__N_2: 2 loads, 2 LSLICEs
+     Net Q_N_343_adj_500: 1 loads, 1 LSLICEs
+     Net n34: 3 loads, 3 LSLICEs
+     Net n8216: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net MEM1_addr_0: 160 loads
+     Net MEM1_addr_1: 160 loads
+     Net MEM1_addr_2: 160 loads
+     Net MEM1_addr_3: 160 loads
+     Net n8282: 82 loads
+     Net n8250: 75 loads
+     Net n8268: 74 loads
+     Net out_uPC_0: 58 loads
+     Net out_uPC_3: 58 loads
+     Net out_uPC_1: 57 loads
+
+
+
+
+   Number of warnings:  16
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: input pad net 'in1[7]' has no legal load.
+WARNING - map: input pad net 'in1[6]' has no legal load.
+WARNING - map: input pad net 'in1[5]' has no legal load.
+WARNING - map: input pad net 'in1[4]' has no legal load.
+WARNING - map: input pad net 'in1[3]' has no legal load.
+WARNING - map: input pad net 'in1[2]' has no legal load.
+WARNING - map: input pad net 'in1[1]' has no legal load.
+WARNING - map: input pad net 'in1[0]' has no legal load.
+WARNING - map: IO buffer missing for top level port in1[7:0](7)...logic will be
+
+     discarded.
+WARNING - map: IO buffer missing for top level port in1[7:0](6)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port in1[7:0](5)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port in1[7:0](4)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port in1[7:0](3)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port in1[7:0](2)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port in1[7:0](1)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port in1[7:0](0)...logic will be
+     discarded.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| in0[0]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[1]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[2]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[3]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[4]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[5]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[6]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[7]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| reset               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| CLK_in              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| prova[0]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| prova[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| prova[2]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| prova[3]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| prova[4]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| prova[5]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| prova[6]            | OUTPUT    | LVCMOS25  |            |
+
++---------------------+-----------+-----------+------------+
+| prova[7]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[2]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[4]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[5]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[6]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[7]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clk_en              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out1[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out1[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out1[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out1[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out1[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out1[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out1[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out1[7]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[0]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[1]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[4]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[5]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[6]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[7]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Signal n1 was merged into signal reset_c
+Signal flipflop1/clk_enable_2 was merged into signal flipflop1/clk_enable_4
+Signal flipflop2/clk_enable_3 was merged into signal flipflop2/clk_enable_1
+Signal adderuPC/A_7__I_0_1/S0 undriven or does not drive anything - clipped.
+Signal adderuPC/A_7__I_0_1/CI undriven or does not drive anything - clipped.
+Signal adderuPC/A_7__I_0_9/S1 undriven or does not drive anything - clipped.
+Signal adderuPC/A_7__I_0_9/CO undriven or does not drive anything - clipped.
+Signal clk_div/counter_257_add_4_25/CO undriven or does not drive anything -
+     clipped.
+Signal clk_div/counter_257_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_div/counter_257_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal ALU/add_105_1/S1 undriven or does not drive anything - clipped.
+Signal ALU/add_105_1/S0 undriven or does not drive anything - clipped.
+Signal ALU/add_105_1/CI undriven or does not drive anything - clipped.
+Signal ALU/add_159_1/S0 undriven or does not drive anything - clipped.
+Signal ALU/add_159_1/CI undriven or does not drive anything - clipped.
+Signal ALU/A_7__I_0_96_add_2_9/CO undriven or does not drive anything - clipped.
+     
+Signal ALU/add_159_9/CO undriven or does not drive anything - clipped.
+Signal ALU/add_105_cout/S1 undriven or does not drive anything - clipped.
+Signal ALU/add_105_cout/CO undriven or does not drive anything - clipped.
+Signal ALU/add_106_1/S0 undriven or does not drive anything - clipped.
+Signal ALU/add_106_1/CI undriven or does not drive anything - clipped.
+Signal ALU/A_7__I_0_100_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal ALU/A_7__I_0_100_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal ALU/A_7__I_0_96_add_2_1/S0 undriven or does not drive anything - clipped.
+     
+Signal ALU/A_7__I_0_96_add_2_1/CI undriven or does not drive anything - clipped.
+     
+Signal ALU/add_106_9/CO undriven or does not drive anything - clipped.
+Signal ALU/A_7__I_0_100_add_2_9/CO undriven or does not drive anything -
+     clipped.
+Signal adderPC/A_7__I_0_1/S0 undriven or does not drive anything - clipped.
+Signal adderPC/A_7__I_0_1/CI undriven or does not drive anything - clipped.
+Signal adderPC/A_7__I_0_9/S1 undriven or does not drive anything - clipped.
+Signal adderPC/A_7__I_0_9/CO undriven or does not drive anything - clipped.
+Block controllerIO/demuxOut/i1_1_lut was optimized away.
+Block flipflop1/i1415_1_lut was optimized away.
+Block flipflop2/i1414_1_lut was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+/MEM1/ram0:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram1:
+    EBRs: 0
+    RAM SLICEs: 3
+
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram10:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram11:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram12:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram13:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram14:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram15:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram16:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram17:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram18:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram19:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram2:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+
+    PFU Registers: 0
+/MEM1/ram20:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram21:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram22:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram23:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram24:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram25:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram26:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram27:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram28:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram29:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram3:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+/MEM1/ram30:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram31:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram4:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram5:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram6:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram7:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram8:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/MEM1/ram9:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+     
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'reset_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'reset_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 8 
+
+     Type and instance name of component: 
+   Register : register_select/B_12
+   Register : register_select/A_11
+   Register : flipflop2/i1407
+   Register : flipflop2/Q_9_1408_1409_reset
+   Register : flipflop2/Q_9_1408_1409_set
+   Register : flipflop1/Q_9_1404_1405_set
+   Register : flipflop1/Q_9_1404_1405_reset
+   Register : flipflop1/i1403
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'reset_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 34 
+
+     Type and instance name of component: 
+   Register : clk_div/counter_257__i23
+   Register : clk_div/counter_257__i22
+   Register : clk_div/counter_257__i21
+   Register : clk_div/counter_257__i20
+   Register : clk_div/counter_257__i19
+   Register : clk_div/counter_257__i18
+   Register : clk_div/counter_257__i17
+   Register : clk_div/counter_257__i16
+   Register : clk_div/counter_257__i15
+   Register : clk_div/counter_257__i14
+   Register : clk_div/counter_257__i13
+   Register : clk_div/counter_257__i12
+   Register : clk_div/counter_257__i11
+   Register : clk_div/counter_257__i10
+   Register : clk_div/counter_257__i9
+   Register : clk_div/counter_257__i8
+   Register : clk_div/counter_257__i7
+   Register : clk_div/counter_257__i6
+   Register : clk_div/counter_257__i5
+   Register : clk_div/counter_257__i4
+   Register : clk_div/counter_257__i3
+   Register : clk_div/counter_257__i2
+   Register : clk_div/counter_257__i1
+   Register : clk_div/counter_257__i24
+
+   Register : clk_div/counter_257__i0
+   Register : uPC/q_i0_i5
+   Register : uPC/q_i0_i7
+   Register : uPC/q_i0_i5_rep_257
+   Register : IR/q_i0_i1
+   Register : IR/q_i0_i2
+   Register : IR/q_i0_i3
+   Register : IR/q_i0_i4
+   Register : IR/q_i0_i6
+   Register : IR/q_i0_i0
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 65 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
