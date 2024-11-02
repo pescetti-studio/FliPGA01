@@ -1,7 +1,6 @@
 // Connecting the AX register to a vector of 8 LEDs that can display its current value, this program uses that vector to show an animation gradually filling up the LED bar. 
 // At the end of the animation, an external LED turns on to indicate completion.
 
-
 // to run the program on Logisim, declare a port between 4 and 7 (inclusive)
 // to run the program on the FPGA board, declare a port between 0 and 1
 < led 0
