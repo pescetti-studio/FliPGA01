@@ -18,8 +18,8 @@ FPGA (Field Programmable Gate Array) is a type of technology used to design cust
 I/O peripherals
 in0 -> 0x00		input 0 (8-bit)
 in1 -> 0x01		input 1 (8-bit)
-out0 -> 0x00	  output 0 (8-bit)
-out1 -> 0x01	  output 1 (8-bit)
+out0 -> 0x00	output 0 (8-bit)
+out1 -> 0x01	output 1 (8-bit)
 ```
 These choices were made because the FPGA used did not have sufficient resources to implement the original Flip01 CPU logic on the board; therefore, it was necessary to simplify the circuit. </br>
 In addition, it is important to specify that to generate the clock signal, a 24 MHz quartz oscillator has been soldered onto the FPGA board. To reduce this frequency, the generated signal will be sent to the input of a block called a clock divider, which will output a synchronization signal with a lower frequency.
