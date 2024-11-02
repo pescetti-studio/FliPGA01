@@ -1,0 +1,163 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sat Oct 12 17:30:29 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     casual_gen
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            75 items scored, 64 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 0.469ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             q_i0_i6  (from clk_c +)
+   Destination:    FD1P3IX    CD             q_i0_i8  (to clk_c +)
+
+   Delay:                   5.309ns  (26.9% logic, 73.1% route), 3 logic levels.
+
+ Constraint Details:
+
+      5.309ns data_path q_i0_i6 to q_i0_i8 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.469ns
+
+ Path Details: q_i0_i6 to q_i0_i8
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              q_i0_i6 (from clk_c)
+Route         4   e 1.398                                  q_c_5
+LUT4        ---     0.493              C to Z              i6_4_lut
+Route         1   e 0.941                                  n14
+LUT4        ---     0.493              C to Z              i29_3_lut
+Route         8   e 1.540                                  n62
+                  --------
+                    5.309  (26.9% logic, 73.1% route), 3 logic levels.
+
+
+Error:  The following path violates requirements by 0.469ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             q_i0_i6  (from clk_c +)
+   Destination:    FD1P3IX    CD             q_i0_i7  (to clk_c +)
+
+   Delay:                   5.309ns  (26.9% logic, 73.1% route), 3 logic levels.
+
+ Constraint Details:
+
+      5.309ns data_path q_i0_i6 to q_i0_i7 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.469ns
+
+ Path Details: q_i0_i6 to q_i0_i7
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              q_i0_i6 (from clk_c)
+Route         4   e 1.398                                  q_c_5
+LUT4        ---     0.493              C to Z              i6_4_lut
+Route         1   e 0.941                                  n14
+LUT4        ---     0.493              C to Z              i29_3_lut
+Route         8   e 1.540                                  n62
+                  --------
+                    5.309  (26.9% logic, 73.1% route), 3 logic levels.
+
+
+Error:  The following path violates requirements by 0.469ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             q_i0_i6  (from clk_c +)
+   Destination:    FD1P3IX    CD             q_i0_i6  (to clk_c +)
+
+   Delay:                   5.309ns  (26.9% logic, 73.1% route), 3 logic levels.
+
+ Constraint Details:
+
+      5.309ns data_path q_i0_i6 to q_i0_i6 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.469ns
+
+ Path Details: q_i0_i6 to q_i0_i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              q_i0_i6 (from clk_c)
+Route         4   e 1.398                                  q_c_5
+LUT4        ---     0.493              C to Z              i6_4_lut
+Route         1   e 0.941                                  n14
+LUT4        ---     0.493              C to Z              i29_3_lut
+Route         8   e 1.540                                  n62
+                  --------
+                    5.309  (26.9% logic, 73.1% route), 3 logic levels.
+
+Warning: 5.469 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|     5.469 ns|     3 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n62                                     |       8|      64|     99.00%
+                                        |        |        |
+n13                                     |       1|      32|     50.00%
+                                        |        |        |
+n14                                     |       1|      32|     50.00%
+                                        |        |        |
+q_c_0                                   |       3|       8|     12.50%
+                                        |        |        |
+q_c_1                                   |       3|       8|     12.50%
+                                        |        |        |
+q_c_2                                   |       3|       8|     12.50%
+                                        |        |        |
+q_c_3                                   |       4|       8|     12.50%
+                                        |        |        |
+q_c_4                                   |       4|       8|     12.50%
+                                        |        |        |
+q_c_5                                   |       4|       8|     12.50%
+                                        |        |        |
+q_c_6                                   |       3|       8|     12.50%
+                                        |        |        |
+q_c_7                                   |       3|       8|     12.50%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 64  Score: 26696
+
+Constraints cover  75 paths, 13 nets, and 38 connections (69.1% coverage)
+
+
+Peak memory: 59727872 bytes, TRCE: 1458176 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
