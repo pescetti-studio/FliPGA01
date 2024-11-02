@@ -3,6 +3,8 @@
 *This project involves the implementation of the 8-bit CPU Flip01 on a Lattice Semiconductor MachXO2 FPGA board, using the software Lattice Diamond.
 On [Medium](https://medium.com/@crocilorenzo01/flipga01-a-simple-8-bit-cpu-on-a-fpga-9ac46a780950), you can find an article that explains everything about FLiPGA01.*
 
+![Flipga01v2](https://github.com/user-attachments/assets/0d2aec34-b826-4880-8a59-930834ec159b)
+
 Flip01 is a small 8-bit processor designed by us and developed at the logic level, featuring an Harvard architecture. The entire project is free and open source. </br> 
 All files mentioned are available here on GitHub and on [Patreon](https://www.patreon.com/c/PescettiStudio) (_for free_). </br>
 For more details, here is an extremely simple guide to [Flip01](https://medium.com/@biasolo.riccardo/flip01-a-simple-yet-versatile-8-bit-cpu-fc01c36d5922).
@@ -117,6 +119,9 @@ As an alternative, you can generate a _.jed_ file to program the board's flash m
 
 *You are now ready to observe the practical execution of the example code on FLiPGA01 to verify its correct functionality. When you run the code, the LED bar will gradually fill up, displaying the values in the AX register as intended, and the external LED will turn on at the end to signal completion.*
 *Once the program finishes, pressing the reset button will restart the process from the beginning.*
+
+![Progetto senza titolo (6)](https://github.com/user-attachments/assets/b2d16410-3aca-4e89-8fdf-6d0dec3cb7d6)
+> A terrible-quality video sped up to 2x.
 
 If you wish to adjust the animation speed, you can modify the value of the 'MAX_COUNT' parameter in the 'clock_divider' module located in the *modules.v* file to change the clock frequency.
 
