@@ -4,7 +4,7 @@
 On [Medium](https://medium.com/@crocilorenzo01/flipga01-a-simple-8-bit-cpu-on-a-fpga-d6b6b3bfb8d1), you can find an article that explains everything about FLiPGA01.*
 
 Flip01 is a small 8-bit processor designed by us and developed at the logic level, featuring an Harvard architecture. The entire project is free and open source. </br> 
-All files mentioned are available on [GitHub](https://github.com/pescetti-studio) and on [Patreon](https://www.patreon.com/c/PescettiStudio) (_for free_). </br>
+All files mentioned are available here on [GitHub](https://github.com/pescetti-studio) and on [Patreon](https://www.patreon.com/c/PescettiStudio) (_for free_). </br>
 For more details, here is an extremely simple guide to [Flip01](https://medium.com/@biasolo.riccardo/flip01-a-simple-yet-versatile-8-bit-cpu-fc01c36d5922).
 
 FPGA (Field Programmable Gate Array) is a type of technology used to design custom digital circuits. Unlike traditional chips, which have a fixed design, FPGAs can be reprogrammed after manufacturing to perform different tasks. This flexibility allows engineers to create hardware tailored to specific applications. FPGAs offer a balance between the flexibility of software and the performance of hardware.
