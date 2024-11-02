@@ -8,21 +8,22 @@ For more details, here is an extremely simple guide to [Flip01](https://medium.c
 
 FPGA (Field Programmable Gate Array) is a type of technology used to design custom digital circuits. Unlike traditional chips, which have a fixed design, FPGAs can be reprogrammed after manufacturing to perform different tasks. This flexibility allows engineers to create hardware tailored to specific applications. FPGAs offer a balance between the flexibility of software and the performance of hardware.
 
-### Important!
-The version of Flip01 implemented on the FPGA board differs from the original processor in the following ways:
-- The MEM1 data memory is an 8-bit RAM instead of a 16-bit one;
-- The address bus is 8-bit instead of 16-bit;
-- The status resisters (SAX and SBX) are not present, and therefore the read and save instructions can no longer be executed;
-- The I/O controller can handle up to 2 inputs and 2 output.
+> [!Important]
+> The version of Flip01 implemented on the FPGA board differs from the original processor in the following ways:
+> - The MEM1 data memory is an 8-bit RAM instead of a 16-bit one;
+> - The address bus is 8-bit instead of 16-bit;
+> - The status resisters (SAX and SBX) are not present, and therefore the read and save instructions can no longer be executed;
+> - The I/O controller can handle up to 2 inputs and 2 output.
 ```
-I/O peripherals
-in0 -> 0x00		input 0 (8-bit)
-in1 -> 0x01		input 1 (8-bit)
-out0 -> 0x00	output 0 (8-bit)
-out1 -> 0x01	output 1 (8-bit)
+> I/O peripherals
+> in0 -> 0x00		input 0 (8-bit)
+> in1 -> 0x01		input 1 (8-bit)
+> out0 -> 0x00	output 0 (8-bit)
+> out1 -> 0x01	output 1 (8-bit)
 ```
-These choices were made because the FPGA used did not have sufficient resources to implement the original Flip01 CPU logic on the board; therefore, it was necessary to simplify the circuit. </br>
-In addition, it is important to specify that to generate the clock signal, a 24 MHz quartz oscillator has been soldered onto the FPGA board. To reduce this frequency, the generated signal will be sent to the input of a block called a clock divider, which will output a synchronization signal with a lower frequency. This signal will then be distributed throughout the entire circuit.
+> These choices were made because the FPGA used did not have sufficient resources to implement the original Flip01 CPU logic on the board; therefore, it was necessary to simplify the circuit. </br>
+> In addition, it is important to specify that to generate the clock signal, a 24 MHz quartz oscillator has been soldered onto the FPGA board. To reduce this frequency, the generated signal will be sent to the input of a block called a clock divider, which will output a synchronization signal with a lower frequency.
+> This signal will then be distributed throughout the entire circuit.
 
 ### Files description
 The included Verilog files describe various hardware modules and memory components necessary for the processor's operations. The main control logic, modules, and two memories (data and instructions) are distribuited across these files:
