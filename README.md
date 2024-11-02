@@ -109,7 +109,7 @@ The circuit with its connections is shown in the electrical schematic below:
 - Select your FPGA board, set the operation type to 'SRAM Fast Program', and the newly created .bit bitstream file;
 - Click on the green 'Program' icon to start loading the bitstream file into the FPGA board's SRAM.
 
-As an alternative, you can generate a .jed file to program the board's flash memory. This method is slower than using the .bit file but allows the logic to persist on the FPGA even after power is turned off.
+As an alternative, you can generate a _.jed_ file to program the board's flash memory. This method is slower than using the _.bit_ file but allows the logic to persist on the FPGA even after power is turned off.
 
 ![IMAGE7](https://github.com/user-attachments/assets/5ef5b2af-53fc-4316-8caa-3e0f78be92f6)
 > Programmer tool
