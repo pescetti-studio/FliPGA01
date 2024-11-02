@@ -1,0 +1,262 @@
+---------------------------------------------------
+Report for cell FLIP
+   Instance path: FLIP
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     462.00        100.0
+                                  LUT4	     632.00        100.0
+                               DISTRAM	      96.00        100.0
+                                 IOBUF	         43        100.0
+                                PFUREG	        118        100.0
+                                RIPPLE	         49        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         registro_8bit	          1         0.9
+                          sr_flip_flop	          1         0.3
+                       sr_flip_flop_U1	          1         0.4
+                     registro_8bit_U12	          1         0.4
+                      registro_8bit_U6	          1         0.4
+                      registro_8bit_U8	          1         0.3
+                      registro_8bit_U9	          1         0.4
+                      registro_8bit_U7	          1         0.4
+                     registro_8bit_U13	          1         0.4
+                     registro_8bit_U14	          1         0.4
+                     registro_8bit_U10	          1         0.4
+                     registro_8bit_U11	          1         0.4
+                       register_select	          1         0.8
+                              mux_16x1	          1         0.8
+                          mux_2x1_8bit	          1         0.4
+                          controllerIO	          1         8.5
+                         clock_divider	          1         3.8
+                buffer_tristate8bit_U3	          1         4.8
+                buffer_tristate8bit_U4	          1         3.0
+                buffer_tristate8bit_U2	          1         0.7
+                         adder_8bit_U5	          1         1.1
+                            adder_8bit	          1         0.9
+                         ROM_microcode	          1        21.2
+                     MEM2_instructions	          1         1.7
+                             MEM1_data	          1        24.6
+                              ALU_8bit	          1        17.9
+---------------------------------------------------
+Report for cell adder_8bit_U5
+   Instance path: FLIP/adderPC
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00         1.1
+                                RIPPLE	          5        10.2
+---------------------------------------------------
+Report for cell registro_8bit_U11
+   Instance path: FLIP/BX
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.4
+                                PFUREG	          8         6.8
+---------------------------------------------------
+Report for cell registro_8bit_U6
+   Instance path: FLIP/PC
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.4
+                                PFUREG	          8         6.8
+---------------------------------------------------
+Report for cell registro_8bit_U9
+   Instance path: FLIP/FLAG
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.4
+                                PFUREG	          8         6.8
+---------------------------------------------------
+Report for cell registro_8bit_U12
+   Instance path: FLIP/AX
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.4
+                                PFUREG	          8         6.8
+---------------------------------------------------
+Report for cell registro_8bit_U13
+   Instance path: FLIP/ALUout
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.4
+                                PFUREG	          8         6.8
+---------------------------------------------------
+Report for cell MEM2_instructions
+   Instance path: FLIP/MEM2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.67         1.7
+                                  LUT4	      19.00         3.0
+---------------------------------------------------
+Report for cell ROM_microcode
+   Instance path: FLIP/ISA
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      98.08        21.2
+                                  LUT4	     200.50        31.7
+---------------------------------------------------
+Report for cell registro_8bit_U14
+   Instance path: FLIP/ALUin
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.4
+                                PFUREG	          8         6.8
+---------------------------------------------------
+Report for cell registro_8bit_U10
+   Instance path: FLIP/DR
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.4
+                                PFUREG	          8         6.8
+---------------------------------------------------
+Report for cell ALU_8bit
+   Instance path: FLIP/ALU
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      82.75        17.9
+                                  LUT4	     123.33        19.5
+                                RIPPLE	         26        53.1
+---------------------------------------------------
+Report for cell buffer_tristate8bit_U3
+   Instance path: FLIP/buffer1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      22.33         4.8
+                                  LUT4	      44.67         7.1
+---------------------------------------------------
+Report for cell clock_divider
+   Instance path: FLIP/clk_div
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.67         3.8
+                                  LUT4	      10.00         1.6
+                                PFUREG	         26        22.0
+                                RIPPLE	         13        26.5
+---------------------------------------------------
+Report for cell mux_2x1_8bit
+   Instance path: FLIP/mux1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.4
+                                  LUT4	       8.00         1.3
+---------------------------------------------------
+Report for cell buffer_tristate8bit_U4
+   Instance path: FLIP/buffer11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      13.67         3.0
+                                  LUT4	      32.67         5.2
+---------------------------------------------------
+Report for cell registro_8bit_U7
+   Instance path: FLIP/MAR
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.4
+                                PFUREG	          8         6.8
+---------------------------------------------------
+Report for cell register_select
+   Instance path: FLIP/register_select
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.58         0.8
+                                  LUT4	       6.33         1.0
+                                PFUREG	          2         1.7
+---------------------------------------------------
+Report for cell sr_flip_flop
+   Instance path: FLIP/flipflop2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.42         0.3
+                                  LUT4	       1.00         0.2
+                                PFUREG	          3         2.5
+---------------------------------------------------
+Report for cell sr_flip_flop_U1
+   Instance path: FLIP/flipflop1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.92         0.4
+                                  LUT4	       1.00         0.2
+                                PFUREG	          3         2.5
+---------------------------------------------------
+Report for cell controllerIO
+   Instance path: FLIP/controllerIO
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      39.25         8.5
+                                  LUT4	      83.67        13.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              demux2x8	          1         0.2
+                    comparator_8bit_U0	          1         0.2
+                       comparator_8bit	          1         2.1
+                   buffer_tristate8bit	          1         6.0
+---------------------------------------------------
+Report for cell demux2x8
+   Instance path: FLIP/controllerIO/demuxOut
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.75         0.2
+                                  LUT4	       2.00         0.3
+---------------------------------------------------
+Report for cell comparator_8bit
+   Instance path: FLIP/controllerIO/compOut
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.67         2.1
+                                  LUT4	      19.67         3.1
+---------------------------------------------------
+Report for cell comparator_8bit_U0
+   Instance path: FLIP/controllerIO/compIn
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.2
+                                  LUT4	       2.00         0.3
+---------------------------------------------------
+Report for cell buffer_tristate8bit
+   Instance path: FLIP/controllerIO/bufferIn
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      27.83         6.0
+                                  LUT4	      60.00         9.5
+---------------------------------------------------
+Report for cell mux_16x1
+   Instance path: FLIP/mux4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.50         0.8
+                                  LUT4	       7.00         1.1
+---------------------------------------------------
+Report for cell buffer_tristate8bit_U2
+   Instance path: FLIP/bufferPC2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.17         0.7
+                                  LUT4	      10.50         1.7
+---------------------------------------------------
+Report for cell adder_8bit
+   Instance path: FLIP/adderuPC
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00         0.9
+                                RIPPLE	          5        10.2
+---------------------------------------------------
+Report for cell MEM1_data
+   Instance path: FLIP/MEM1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     113.50        24.6
+                                  LUT4	      35.33         5.6
+                               DISTRAM	      96.00        100.0
+---------------------------------------------------
+Report for cell registro_8bit
+   Instance path: FLIP/uPC
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.33         0.9
+                                PFUREG	         14        11.9
+---------------------------------------------------
+Report for cell registro_8bit_U8
+   Instance path: FLIP/IR
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.50         0.3
+                                PFUREG	          6         5.1

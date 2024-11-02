@@ -1,0 +1,292 @@
+----------------------------------------------------------------------
+Report for cell FLIP.TECH
+Register bits:  118 of 7209 (1.637%)
+I/O cells:      43
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        49          100.0
+                            FD1P3AX        77          100.0
+                            FD1P3BX         2          100.0
+                            FD1P3DX         2          100.0
+                            FD1P3IX         9          100.0
+                             FD1S1D         2          100.0
+                            FD1S3AX         1          100.0
+                            FD1S3IX        25          100.0
+                                GSR         1          100.0
+                                 IB        10          100.0
+                            L6MUX21        27          100.0
+                               LUT4       626          100.0
+                                 OB        33          100.0
+                              PFUMX        95          100.0
+                           SPR16X4C        32          100.0
+SUB MODULES
+                           ALU_8bit         1
+                          MEM1_data         1
+                  MEM2_instructions         1
+                      ROM_microcode         1
+                         adder_8bit         1
+                      adder_8bit_U5         1
+                buffer_tristate8bit         1
+             buffer_tristate8bit_U2         1
+             buffer_tristate8bit_U3         1
+             buffer_tristate8bit_U4         1
+                      clock_divider         1
+                    comparator_8bit         1
+                 comparator_8bit_U0         1
+                       controllerIO         1
+                           demux2x8         1
+                           mux_16x1         1
+                       mux_2x1_8bit         1
+                    register_select         1
+                      registro_8bit         1
+                  registro_8bit_U10         1
+                  registro_8bit_U11         1
+                  registro_8bit_U12         1
+                  registro_8bit_U13         1
+                  registro_8bit_U14         1
+                   registro_8bit_U6         1
+                   registro_8bit_U7         1
+                   registro_8bit_U8         1
+                   registro_8bit_U9         1
+                       sr_flip_flop         1
+                    sr_flip_flop_U1         1
+                              TOTAL      1021
+----------------------------------------------------------------------
+Report for cell adder_8bit_U5.v1
+Instance Path : adderPC
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           10.2
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell registro_8bit_U11.v1
+Instance Path : BX
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           10.4
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell registro_8bit_U6.v1
+Instance Path : PC
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           10.4
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell registro_8bit_U9.v1
+Instance Path : FLAG
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           10.4
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell registro_8bit_U12.v1
+Instance Path : AX
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           10.4
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell registro_8bit_U13.v1
+Instance Path : ALUout
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           10.4
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell MEM2_instructions.v1
+Instance Path : MEM2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        18            2.9
+                              PFUMX         3            3.2
+                              TOTAL        21
+----------------------------------------------------------------------
+Report for cell ROM_microcode.v1
+Instance Path : ISA
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            L6MUX21         1            3.7
+                               LUT4       205           32.7
+                              PFUMX        16           16.8
+                              TOTAL       222
+----------------------------------------------------------------------
+Report for cell registro_8bit_U14.v1
+Instance Path : ALUin
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           10.4
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell registro_8bit_U10.v1
+Instance Path : DR
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           10.4
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell ALU_8bit.v1
+Instance Path : ALU
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        26           53.1
+                            L6MUX21         1            3.7
+                               LUT4       113           18.1
+                              PFUMX        38           40.0
+                              TOTAL       178
+----------------------------------------------------------------------
+Report for cell buffer_tristate8bit_U3.v1
+Instance Path : buffer1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        66           10.5
+                              TOTAL        66
+----------------------------------------------------------------------
+Report for cell clock_divider.v1
+Instance Path : clk_div
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13           26.5
+                            FD1S3AX         1          100.0
+                            FD1S3IX        25          100.0
+                               LUT4        10            1.6
+                              TOTAL        49
+----------------------------------------------------------------------
+Report for cell mux_2x1_8bit.v1
+Instance Path : mux1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         8            1.3
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell buffer_tristate8bit_U4.v1
+Instance Path : buffer11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        34            5.4
+                              TOTAL        34
+----------------------------------------------------------------------
+Report for cell registro_8bit_U7.v1
+Instance Path : MAR
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           10.4
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell register_select.v1
+Instance Path : register_select
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         2            2.6
+                               LUT4         6            1.0
+                              PFUMX         2            2.1
+                              TOTAL        10
+----------------------------------------------------------------------
+Report for cell sr_flip_flop.v1
+Instance Path : flipflop2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         1           50.0
+                            FD1P3DX         1           50.0
+                             FD1S1D         1           50.0
+                               LUT4         2            0.3
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell sr_flip_flop_U1.v1
+Instance Path : flipflop1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         1           50.0
+                            FD1P3DX         1           50.0
+                             FD1S1D         1           50.0
+                               LUT4         2            0.3
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell controllerIO.v1
+Instance Path : controllerIO
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        85           13.6
+SUB MODULES
+                buffer_tristate8bit         1
+                    comparator_8bit         1
+                 comparator_8bit_U0         1
+                           demux2x8         1
+                              TOTAL        89
+----------------------------------------------------------------------
+Report for cell demux2x8.v1
+Instance Path : controllerIO.demuxOut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3            0.5
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell comparator_8bit.v1
+Instance Path : controllerIO.compOut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        20            3.2
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell comparator_8bit_U0.v1
+Instance Path : controllerIO.compIn
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            0.3
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell buffer_tristate8bit.v1
+Instance Path : controllerIO.bufferIn
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        60            9.6
+                              TOTAL        60
+----------------------------------------------------------------------
+Report for cell mux_16x1.v1
+Instance Path : mux4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            L6MUX21         1            3.7
+                               LUT4         7            1.1
+                              PFUMX         3            3.2
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell buffer_tristate8bit_U2.v1
+Instance Path : bufferPC2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        10            1.6
+                              PFUMX         1            1.1
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell adder_8bit.v1
+Instance Path : adderuPC
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           10.2
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell MEM1_data.v1
+Instance Path : MEM1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            L6MUX21        24           88.9
+                               LUT4        14            2.2
+                              PFUMX        32           33.7
+                           SPR16X4C        32          100.0
+                              TOTAL       102
+----------------------------------------------------------------------
+Report for cell registro_8bit.v1
+Instance Path : uPC
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        11           14.3
+                            FD1P3IX         3           33.3
+                              TOTAL        14
+----------------------------------------------------------------------
+Report for cell registro_8bit_U8.v1
+Instance Path : IR
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX         6           66.7
+                              TOTAL         6
