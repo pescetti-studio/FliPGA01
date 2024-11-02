@@ -1,0 +1,340 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Nov 02 10:57:46 2024
+
+
+Command Line:  synthesis -f FLiP01_main_lattice.synproj -gui -msgset C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = FLIP.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01 (searchpath added)
+-p C:/lscc/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/main (searchpath added)
+-p C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01 (searchpath added)
+Verilog design file = C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/FLiP01_core.v
+Verilog design file = C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/modules.v
+Verilog design file = C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/MEM1_data.v
+Verilog design file = C:/Users/Croci/OneDrive/Desktop/FLIP/FLiPGA01/MEM2_instructions.v
+NGD file = FLiP01_main.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v. VERI-1482
+WARNING - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(322): out_adderPC is already implicitly declared earlier. VERI-1362
+WARNING - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(110): identifier AX_out is used before its declaration. VERI-1875
+WARNING - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(111): identifier AX_out is used before its declaration. VERI-1875
+Analyzing Verilog file c:/users/croci/onedrive/desktop/flip/flipga01/modules.v. VERI-1482
+Analyzing Verilog file c:/users/croci/onedrive/desktop/flip/flipga01/mem1_data.v. VERI-1482
+Analyzing Verilog file c:/users/croci/onedrive/desktop/flip/flipga01/mem2_instructions.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): FLIP
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(89): compiling module FLIP. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(285): compiling module buffer_tristate1bit. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(397): compiling module clock_divider. VERI-1018
+WARNING - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(418): expression size 32 truncated to fit in target size 25. VERI-1209
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/mem1_data.v(40): compiling module MEM1_data. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(272): compiling module buffer_tristate8bit. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(516): compiling module mux_2x1_8bit. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(249): compiling module registro_8bit. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(427): compiling module ALU_8bit. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(353): compiling module adder_8bit. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(43): compiling module ROM_microcode. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(542): compiling module mux_16x1. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/mem2_instructions.v(40): compiling module MEM2_instructions. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(296): compiling module buffer_tristate9bit. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(310): compiling module register_select. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(529): compiling module mux_2x1_1bit. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(157): compiling module controllerIO. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(574): compiling module mux2x8. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(229): compiling module comparator_8bit. VERI-1018
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(594): compiling module demux2x8. VERI-1018
+WARNING - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(171): net sel_muxIn does not have a driver. VDB-1002
+INFO - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(616): compiling module sr_flip_flop. VERI-1018
+WARNING - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(148): net sel_mux5 does not have a driver. VDB-1002
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = FLIP.
+WARNING - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(443): Removing unused instance mux5. VDB-5034
+WARNING - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(171): net sel_muxIn does not have a driver. VDB-1002
+WARNING - synthesis: I/O Port out0[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out0[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out0[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out0[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out0[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out0[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out0[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out1[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out1[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out1[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out1[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out1[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out1[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port out1[1] 's net has no driver and is unused.
+######## Missing driver on net out0[7]. Patching with GND.
+######## Missing driver on net out0[6]. Patching with GND.
+######## Missing driver on net out0[5]. Patching with GND.
+######## Missing driver on net out0[4]. Patching with GND.
+######## Missing driver on net out0[3]. Patching with GND.
+######## Missing driver on net out0[2]. Patching with GND.
+######## Missing driver on net out0[1]. Patching with GND.
+######## Missing driver on net out1[7]. Patching with GND.
+######## Missing driver on net out1[6]. Patching with GND.
+######## Missing driver on net out1[5]. Patching with GND.
+######## Missing driver on net out1[4]. Patching with GND.
+######## Missing driver on net out1[3]. Patching with GND.
+######## Missing driver on net out1[2]. Patching with GND.
+######## Missing driver on net out1[1]. Patching with GND.
+######## Missing driver on net \controllerIO/sel_muxIn. Patching with GND.
+
+
+
+######## Found 1 RTL RAMs in the design.
+######## Mapping RTL RAM \MEM1/ram to 32 Distributed blocks in SINGLE_PORT Mode
+
+WARNING - synthesis: I/O Port in1[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port in1[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port in1[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port in1[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port in1[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port in1[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port in1[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port in1[0] 's net has no driver and is unused.
+WARNING - synthesis: c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(263): Register \IR/q_i0_i7 is stuck at Zero. VDB-5013
+GSR instance connected to net n2065.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in FLIP_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'in1[7]' has no load.
+WARNING - synthesis: input pad net 'in1[7]' has no legal load.
+WARNING - synthesis: logical net 'in1[6]' has no load.
+WARNING - synthesis: input pad net 'in1[6]' has no legal load.
+WARNING - synthesis: logical net 'in1[5]' has no load.
+WARNING - synthesis: input pad net 'in1[5]' has no legal load.
+WARNING - synthesis: logical net 'in1[4]' has no load.
+WARNING - synthesis: input pad net 'in1[4]' has no legal load.
+WARNING - synthesis: logical net 'in1[3]' has no load.
+WARNING - synthesis: input pad net 'in1[3]' has no legal load.
+WARNING - synthesis: logical net 'in1[2]' has no load.
+WARNING - synthesis: input pad net 'in1[2]' has no legal load.
+WARNING - synthesis: logical net 'in1[1]' has no load.
+WARNING - synthesis: input pad net 'in1[1]' has no legal load.
+WARNING - synthesis: logical net 'in1[0]' has no load.
+WARNING - synthesis: input pad net 'in1[0]' has no legal load.
+WARNING - synthesis: DRC complete with 16 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FLiP01_main.ngd.
+
+################### Begin Area Report (FLIP)######################
+Number of register bits => 118 of 7209 (1 % )
+CCU2D => 49
+FD1P3AX => 77
+FD1P3BX => 2
+FD1P3DX => 2
+FD1P3IX => 9
+FD1S1D => 2
+FD1S3AX => 1
+FD1S3IX => 25
+GSR => 1
+IB => 10
+L6MUX21 => 27
+LUT4 => 626
+OB => 33
+PFUMX => 95
+SPR16X4C => 32
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 4
+  Net : ISA/CLKin, loads : 110
+  Net : clk_div/clk, loads : 44
+  Net : controllerIO/demuxOut/Q_N_343, loads : 2
+  Net : Q_N_343, loads : 2
+Clock Enable Nets
+Number of Clock Enables: 15
+Top 10 highest fanout Clock Enables:
+  Net : CLKin_enable_84, loads : 7
+  Net : flipflop2/clk_enable_1, loads : 3
+  Net : flipflop1/clk_enable_4, loads : 3
+  Net : register_select/A_N_337, loads : 2
+  Net : CLKin_enable_20, loads : 1
+  Net : CLKin_enable_71, loads : 1
+  Net : CLKin_enable_38, loads : 1
+  Net : CLKin_enable_50, loads : 1
+  Net : flipflop2/clk_enable_3, loads : 1
+  Net : CLKin_enable_78, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : ISA/n8282, loads : 81
+  Net : buffer11/n8250, loads : 74
+  Net : ISA/n8268, loads : 73
+  Net : uPC/out_uPC_3, loads : 57
+  Net : uPC/out_uPC_1, loads : 56
+  Net : uPC/out_uPC_0, loads : 56
+  Net : uPC/out_uPC_4, loads : 55
+  Net : uPC/out_uPC_2, loads : 50
+  Net : uPC/out_uPC_5, loads : 42
+  Net : buffer11/n8240, loads : 39
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk]                     |  200.000 MHz|   89.952 MHz|     6 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets CLKin]                   |  200.000 MHz|   32.693 MHz|    22 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 90.254  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.734  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
