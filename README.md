@@ -15,15 +15,15 @@ FPGA (Field Programmable Gate Array) is a type of technology used to design cust
 > - The status resisters (SAX and SBX) are not present, and therefore the read and save instructions can no longer be executed;
 > - The I/O controller can handle up to 2 inputs and 2 output.
 ```
-> I/O peripherals
-> in0 -> 0x00		input 0 (8-bit)
-> in1 -> 0x01		input 1 (8-bit)
-> out0 -> 0x00	output 0 (8-bit)
-> out1 -> 0x01	output 1 (8-bit)
+I/O peripherals
+in0 -> 0x00		input 0 (8-bit)
+in1 -> 0x01		input 1 (8-bit)
+out0 -> 0x00	output 0 (8-bit)
+out1 -> 0x01	output 1 (8-bit)
 ```
-> These choices were made because the FPGA used did not have sufficient resources to implement the original Flip01 CPU logic on the board; therefore, it was necessary to simplify the circuit. </br>
-> In addition, it is important to specify that to generate the clock signal, a 24 MHz quartz oscillator has been soldered onto the FPGA board. To reduce this frequency, the generated signal will be sent to the input of a block called a clock divider, which will output a synchronization signal with a lower frequency.
-> This signal will then be distributed throughout the entire circuit.
+These choices were made because the FPGA used did not have sufficient resources to implement the original Flip01 CPU logic on the board; therefore, it was necessary to simplify the circuit. </br>
+In addition, it is important to specify that to generate the clock signal, a 24 MHz quartz oscillator has been soldered onto the FPGA board. To reduce this frequency, the generated signal will be sent to the input of a block called a clock divider, which will output a synchronization signal with a lower frequency.
+This signal will then be distributed throughout the entire circuit.
 
 ### Files description
 The included Verilog files describe various hardware modules and memory components necessary for the processor's operations. The main control logic, modules, and two memories (data and instructions) are distribuited across these files:
@@ -48,7 +48,7 @@ First, you need to open the led_charging.txt file, where there is the assembly c
 ![IMAGE1](https://github.com/user-attachments/assets/88b5ca6d-c356-484e-8c51-1335b8dd51ff)
 > Machine code to copy to the memories files
 
-Once the machine code is ready, open the *FLiP01.ldf* project file located in the FLiPGA01 directory.
+Once the machine code is ready, open the [*FLiP01.ldf*](https://github.com/pescetti-studio/FlipGA01/blob/main/FlipGA01/FLiP01.ldf) project file located in the FLiPGA01 directory.
 
 **2. Copy the machine code to the memories files**
 Next, open the *MEM1_data.v* and *MEM2_instructions.v* files from the File List menu, and copy the machine code, you previously generated, into the appropriate sections of these files. Make sure to input the code correctly, and ten save all the changes.
@@ -116,8 +116,6 @@ As an alternative, you can generate a .jed file to program the board's flash mem
 
 *You are now ready to observe the practical execution of the example code on FLiPGA01 to verify its correct functionality. When you run the code, the LED bar will gradually fill up, displaying the values in the AX register as intended, and the external LED will turn on at the end to signal completion.*
 *Once the program finishes, pressing the reset button will restart the process from the beginning.*
-
-video?
 
 If you wish to adjust the animation speed, you can modify the value of the 'MAX_COUNT' parameter in the 'clock_divider' module located in the *modules.v* file to change the clock frequency.
 
