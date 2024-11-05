@@ -1,7 +1,7 @@
 # FLiPGA01: a simple 8-bit CPU on a FPGA
 
 *This project involves the implementation of the 8-bit CPU Flip01 on a Lattice Semiconductor MachXO2 FPGA board, using the software Lattice Diamond.
-On [Medium](https://medium.com/@crocilorenzo01/flipga01-a-simple-8-bit-cpu-on-a-fpga-9ac46a780950), you can find an article that explains everything about FLiPGA01.*
+On [Medium](https://medium.com/@crocilorenzo01/flipga01-a-simple-8-bit-cpu-on-a-fpga-db3e0fb82fe6), you can find an article that explains everything about FLiPGA01.*
 
 ![Flipga01v2](https://github.com/user-attachments/assets/0d2aec34-b826-4880-8a59-930834ec159b)
 
