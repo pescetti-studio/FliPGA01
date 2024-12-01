@@ -129,3 +129,7 @@ As an alternative, you can generate a _.jed_ file to program the board's flash m
 If you wish to adjust the animation speed, you can modify the value of the 'MAX_COUNT' parameter in the 'clock_divider' module located in the *modules.v* file to change the clock frequency.
 
 **Have fun!**
+
+Do you like this stuff? </br>
+Support us with a [donation on PayPal](https://paypal.me/PescettiStudio?country.x=IT&locale.x=it_IT)! </br>
+It helps us keep everything free and open source for everyone. </br>
