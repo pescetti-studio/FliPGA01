@@ -1,0 +1,94 @@
+[ START MERGED ]
+n2072 reset_c
+flipflop1/clk_enable_2 flipflop1/clk_enable_4
+flipflop2/clk_enable_3 flipflop2/clk_enable_1
+[ END MERGED ]
+[ START CLIPPED ]
+adderuPC/A_7__I_0_1/S0
+adderuPC/A_7__I_0_1/CI
+adderuPC/A_7__I_0_9/S1
+adderuPC/A_7__I_0_9/CO
+clk_div/counter_248_add_4_1/S0
+clk_div/counter_248_add_4_1/CI
+clk_div/counter_248_add_4_25/CO
+adderPC/A_7__I_0_9/S1
+adderPC/A_7__I_0_9/CO
+adderPC/A_7__I_0_1/S0
+adderPC/A_7__I_0_1/CI
+ALU/add_163_1/S0
+ALU/add_163_1/CI
+ALU/A_7__I_0_107_add_2_9/CO
+ALU/add_118_1/S0
+ALU/add_118_1/CI
+ALU/add_163_9/CO
+ALU/A_7__I_0_111_add_2_1/S0
+ALU/A_7__I_0_111_add_2_1/CI
+ALU/add_118_9/CO
+ALU/add_117_1/S1
+ALU/add_117_1/S0
+ALU/add_117_1/CI
+ALU/mult_8u_8u_0_Cadd_0_4/S1
+ALU/mult_8u_8u_0_Cadd_0_4/COUT
+ALU/mult_8u_8u_0_cin_lr_add_2/S1
+ALU/mult_8u_8u_0_cin_lr_add_2/S0
+ALU/mult_8u_8u_0_Cadd_2_4/S1
+ALU/mult_8u_8u_0_Cadd_2_4/COUT
+ALU/mult_8u_8u_0_cin_lr_add_4/S1
+ALU/mult_8u_8u_0_cin_lr_add_4/S0
+ALU/mult_8u_8u_0_Cadd_4_4/S1
+ALU/mult_8u_8u_0_Cadd_4_4/COUT
+ALU/mult_8u_8u_0_cin_lr_add_6/S1
+ALU/mult_8u_8u_0_cin_lr_add_6/S0
+ALU/mult_8u_8u_0_Cadd_6_4/S1
+ALU/mult_8u_8u_0_Cadd_6_4/COUT
+ALU/Cadd_mult_8u_8u_0_0_1/S0
+ALU/Cadd_mult_8u_8u_0_0_7/S1
+ALU/Cadd_mult_8u_8u_0_0_7/COUT
+ALU/Cadd_mult_8u_8u_0_1_1/S0
+ALU/mult_8u_8u_0_add_1_6/S1
+ALU/mult_8u_8u_0_add_1_6/COUT
+ALU/Cadd_t_mult_8u_8u_0_2_1/S0
+ALU/t_mult_8u_8u_0_add_2_7/S1
+ALU/t_mult_8u_8u_0_add_2_7/COUT
+ALU/A_7__I_0_111_add_2_9/CO
+ALU/A_7__I_0_107_add_2_1/S0
+ALU/A_7__I_0_107_add_2_1/CI
+ALU/add_117_cout/S1
+ALU/add_117_cout/CO
+ALU/mult_8u_8u_0_cin_lr_add_0/S1
+ALU/mult_8u_8u_0_cin_lr_add_0/S0
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Sat Nov 30 17:58:09 2024
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "in0[0]" SITE "91" ;
+LOCATE COMP "in0[1]" SITE "3" ;
+LOCATE COMP "in0[3]" SITE "5" ;
+LOCATE COMP "in0[4]" SITE "6" ;
+LOCATE COMP "in0[5]" SITE "9" ;
+LOCATE COMP "in0[6]" SITE "10" ;
+LOCATE COMP "in0[7]" SITE "11" ;
+LOCATE COMP "reset" SITE "20" ;
+LOCATE COMP "CLK_in" SITE "27" ;
+LOCATE COMP "led[0]" SITE "97" ;
+LOCATE COMP "led[1]" SITE "98" ;
+LOCATE COMP "led[2]" SITE "99" ;
+LOCATE COMP "led[3]" SITE "100" ;
+LOCATE COMP "led[4]" SITE "104" ;
+LOCATE COMP "led[5]" SITE "105" ;
+LOCATE COMP "led[6]" SITE "106" ;
+LOCATE COMP "led[7]" SITE "107" ;
+LOCATE COMP "clk_en" SITE "32" ;
+LOCATE COMP "out1[0]" SITE "125" ;
+LOCATE COMP "out0[0]" SITE "82" ;
+LOCATE COMP "out0[1]" SITE "110" ;
+LOCATE COMP "out0[2]" SITE "45" ;
+LOCATE COMP "out0[3]" SITE "44" ;
+LOCATE COMP "out0[4]" SITE "43" ;
+LOCATE COMP "out0[5]" SITE "42" ;
+LOCATE COMP "out0[6]" SITE "41" ;
+LOCATE COMP "out0[7]" SITE "40" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

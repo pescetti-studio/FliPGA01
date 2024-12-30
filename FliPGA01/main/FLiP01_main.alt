@@ -1,0 +1,43 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sat Nov 30 17:58:23 2024 *
+NOTE DESIGN NAME: FLIP *
+NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS in0[0] : 91 : in *
+NOTE PINS in0[1] : 3 : in *
+NOTE PINS in0[2] : 54 : in *
+NOTE PINS in0[3] : 5 : in *
+NOTE PINS in0[4] : 6 : in *
+NOTE PINS in0[5] : 9 : in *
+NOTE PINS in0[6] : 10 : in *
+NOTE PINS in0[7] : 11 : in *
+NOTE PINS reset : 20 : in *
+NOTE PINS CLK_in : 27 : in *
+NOTE PINS led[0] : 97 : out *
+NOTE PINS led[1] : 98 : out *
+NOTE PINS led[2] : 99 : out *
+NOTE PINS led[3] : 100 : out *
+NOTE PINS led[4] : 104 : out *
+NOTE PINS led[5] : 105 : out *
+NOTE PINS led[6] : 106 : out *
+NOTE PINS led[7] : 107 : out *
+NOTE PINS clk_en : 32 : out *
+NOTE PINS out1[0] : 125 : out *
+NOTE PINS out1[1] : 111 : out *
+NOTE PINS out1[2] : 113 : out *
+NOTE PINS out1[3] : 133 : out *
+NOTE PINS out1[4] : 132 : out *
+NOTE PINS out1[5] : 115 : out *
+NOTE PINS out1[6] : 122 : out *
+NOTE PINS out1[7] : 49 : out *
+NOTE PINS out0[0] : 82 : out *
+NOTE PINS out0[1] : 110 : out *
+NOTE PINS out0[2] : 45 : out *
+NOTE PINS out0[3] : 44 : out *
+NOTE PINS out0[4] : 43 : out *
+NOTE PINS out0[5] : 42 : out *
+NOTE PINS out0[6] : 41 : out *
+NOTE PINS out0[7] : 40 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

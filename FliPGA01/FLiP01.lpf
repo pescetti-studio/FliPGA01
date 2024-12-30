@@ -1,0 +1,64 @@
+//--------------------------------------------------------------------------------//
+//                                                                                //
+//                FLiPGA01: FPGA IMPLEMENTATION OF THE FLiP01 CPU                 //
+//                                                                                //
+//                                   MIT License                                  //
+//                                                                                //
+//     Copyright (c) 2024 Pescetti Studio (Biasolo Riccardo & Croci Lorenzo)      //
+//                                                                                //
+// Permission is hereby granted, free of charge, to any person obtaining a copy   //
+// of this software and associated documentation files (the "Software"), to deal  //
+// in the Software without restriction, including without limitation the rights   //
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell      //
+// copies of the Software, and to permit persons to whom the Software is          //
+// furnished to do so, subject to the following conditions:                       //
+//                                                                                //
+// The above copyright notice and this permission notice shall be included in all //
+// copies or substantial portions of the Software.                                //
+//                                                                                //
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR     //
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,       //
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE    //
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER         //
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  //
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  //
+// SOFTWARE.                                                                      //
+//                                                                                //
+//                                                                                //
+//      Author(s): Pescetti Studio (Biasolo Riccardo & Croci Lorenzo) - 2024      //
+//                                                                                //
+//                        Do you think this code sucks?                           //
+//                            You’re probably right!                              //
+//              Hit us up at pescettistudio@gmail.com and let us know             //
+//                            how to make it better.                              //
+//                                                                                //
+//--------------------------------------------------------------------------------//
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+LOCATE COMP "CLK_in" SITE "27" ;
+LOCATE COMP "reset" SITE "20" ;
+LOCATE COMP "clk_en" SITE "32" ;
+LOCATE COMP "led[0]" SITE "97" ;
+LOCATE COMP "led[1]" SITE "98" ;
+LOCATE COMP "led[2]" SITE "99" ;
+LOCATE COMP "led[3]" SITE "100" ;
+LOCATE COMP "led[4]" SITE "104" ;
+LOCATE COMP "led[5]" SITE "105" ;
+LOCATE COMP "led[6]" SITE "106" ;
+LOCATE COMP "led[7]" SITE "107" ;
+LOCATE COMP "in0[0]" SITE "91" ;
+LOCATE COMP "in0[1]" SITE "3" ;
+LOCATE COMP "in0[3]" SITE "5" ;
+LOCATE COMP "in0[4]" SITE "6" ;
+LOCATE COMP "in0[5]" SITE "9" ;
+LOCATE COMP "in0[6]" SITE "10" ;
+LOCATE COMP "in0[7]" SITE "11" ;
+LOCATE COMP "out0[0]" SITE "82" ;
+LOCATE COMP "out0[1]" SITE "110" ;
+LOCATE COMP "out0[2]" SITE "45" ;
+LOCATE COMP "out0[3]" SITE "44" ;
+LOCATE COMP "out0[4]" SITE "43" ;
+LOCATE COMP "out0[5]" SITE "42" ;
+LOCATE COMP "out0[6]" SITE "41" ;
+LOCATE COMP "out0[7]" SITE "40" ;
+LOCATE COMP "out1[0]" SITE "125" ;

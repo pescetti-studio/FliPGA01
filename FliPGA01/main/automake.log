@@ -1,0 +1,877 @@
+
+synthesis -f "FLiP01_main_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Nov 30 17:58:05 2024
+
+
+Command Line:  synthesis -f FLiP01_main_lattice.synproj -gui -msgset C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = FLIP.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01 (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/main (searchpath added)
+-p C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01 (searchpath added)
+Verilog design file = C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/FLiP01_core.v
+Verilog design file = C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/modules.v
+Verilog design file = C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/MEM1_data.v
+Verilog design file = C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/MEM2_instructions.v
+NGD file = FLiP01_main.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v. VERI-1482
+    <postMsg mid="35901362" type="Warning" dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(320): " arg1="out_adderPC" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v" arg3="320"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(109): " arg1="BX_out" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v" arg3="109"  />
+Analyzing Verilog file c:/users/croci/onedrive/desktop/flip/flipga01/modules.v. VERI-1482
+Analyzing Verilog file c:/users/croci/onedrive/desktop/flip/flipga01/mem1_data.v. VERI-1482
+Analyzing Verilog file c:/users/croci/onedrive/desktop/flip/flipga01/mem2_instructions.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): FLIP
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(89): " arg1="FLIP" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v" arg3="89"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(307): " arg1="buffer_tristate1bit" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="307"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(419): " arg1="clock_divider" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="419"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(440): " arg1="32" arg2="25" arg3="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg4="440"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/mem1_data.v(40): " arg1="MEM1_data" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/mem1_data.v" arg3="40"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(294): " arg1="buffer_tristate8bit" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="294"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(547): " arg1="mux_2x1_8bit" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="547"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(271): " arg1="registro_8bit" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="271"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(449): " arg1="ALU_8bit" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="449"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(508): " arg1="16" arg2="8" arg3="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg4="508"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(375): " arg1="adder_8bit" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="375"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(43): " arg1="ROM_microcode" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="43"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(573): " arg1="mux_16x1" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="573"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/mem2_instructions.v(40): " arg1="MEM2_instructions" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/mem2_instructions.v" arg3="40"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(318): " arg1="buffer_tristate9bit" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="318"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(332): " arg1="register_select" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="332"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(560): " arg1="mux_2x1_1bit" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="560"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(179): " arg1="controllerIO" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="179"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(605): " arg1="mux2x8" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="605"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(251): " arg1="comparator_8bit" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="251"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(625): " arg1="demux2x8" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="625"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(193): " arg1="sel_muxIn" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="193"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(647): " arg1="sr_flip_flop" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="647"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(146): " arg1="sel_mux5" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v" arg3="146"  />
+Last elaborated design is FLIP()
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = FLIP.
+    <postMsg mid="35935034" type="Warning" dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v(441): " arg1="mux5" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/flip01_core.v" arg3="441"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(193): " arg1="sel_muxIn" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="193"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out0[7]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out0[6]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out0[5]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out0[4]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out0[3]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out0[2]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out0[1]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out1[7]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out1[6]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out1[5]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out1[4]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out1[3]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out1[2]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="out1[1]"  />
+######## Missing driver on net out0[7]. Patching with GND.
+######## Missing driver on net out0[6]. Patching with GND.
+######## Missing driver on net out0[5]. Patching with GND.
+######## Missing driver on net out0[4]. Patching with GND.
+######## Missing driver on net out0[3]. Patching with GND.
+######## Missing driver on net out0[2]. Patching with GND.
+######## Missing driver on net out0[1]. Patching with GND.
+######## Missing driver on net out1[7]. Patching with GND.
+######## Missing driver on net out1[6]. Patching with GND.
+######## Missing driver on net out1[5]. Patching with GND.
+######## Missing driver on net out1[4]. Patching with GND.
+######## Missing driver on net out1[3]. Patching with GND.
+######## Missing driver on net out1[2]. Patching with GND.
+######## Missing driver on net out1[1]. Patching with GND.
+######## Missing driver on net \controllerIO/sel_muxIn. Patching with GND.
+
+
+
+######## Found 1 RTL RAMs in the design.
+######## Mapping RTL RAM \MEM1/ram to 32 Distributed blocks in SINGLE_PORT Mode
+
+SCUBA, Version Diamond (64-bit) 3.14.0.75.2
+Sat Nov 30 17:58:06 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+BEGIN SCUBA Module Synthesis
+
+    Issued command   : c:/lscc/diamond/3.14/ispfpga/bin/nt64/scuba.exe -w -n mult_8u_8u -lang verilog -bb -arch xo2c00 -type dspmult -pfu_mult -widtha 8 -widthb 8 -widthp 16 -pl_stages 0 
+    Circuit name     : mult_8u_8u
+    Module type      : dspmult
+    Module Version   : 4.2
+    Ports            : 
+	Inputs       : A[7:0], B[7:0]
+	Outputs      : P[15:0]
+    I/O buffer       : not inserted
+    EDIF output      : mult_8u_8u.edn
+    Verilog output   : mult_8u_8u.v
+    Verilog template : mult_8u_8u_tmpl.v
+    Verilog testbench: tb_mult_8u_8u_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : mult_8u_8u.srp
+    Estimated Resource Usage:
+            LUT : 92
+
+END   SCUBA Module Synthesis
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_8u_8u.v. VERI-1482
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(524): " arg1="a[7]" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="524"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="in1[7]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="in1[6]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="in1[5]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="in1[4]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="in1[3]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="in1[2]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="in1[1]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="in1[0]"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v(285): " arg1="\IR/q_i0_i7" arg2="c:/users/croci/onedrive/desktop/flip/flipga01/modules.v" arg3="285"  />
+GSR instance connected to net n2072.
+Duplicate register/latch removal. \IR/q_i0_i0 is a one-to-one match with \IR/q_i0_i6.
+Duplicate register/latch removal. \IR/q_i0_i5 is a one-to-one match with \IR/q_i0_i1.
+Duplicate register/latch removal. \IR/q_i0_i4 is a one-to-one match with \IR/q_i0_i0.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in FLIP_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="in1[7]" arg2="in1[7]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="in1[6]" arg2="in1[6]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[6]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="in1[5]" arg2="in1[5]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="in1[4]" arg2="in1[4]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="in1[3]" arg2="in1[3]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="in1[2]" arg2="in1[2]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="in1[1]" arg2="in1[1]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="in1[0]" arg2="in1[0]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[0]"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="16"  />
+
+Design Results:
+   1031 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FLiP01_main.ngd.
+
+################### Begin Area Report (FLIP)######################
+Number of register bits => 114 of 7209 (1 % )
+AND2 => 4
+CCU2D => 49
+FADD2B => 28
+FD1P3AX => 79
+FD1P3BX => 2
+FD1P3DX => 2
+FD1P3IX => 3
+FD1S1D => 2
+FD1S3AX => 1
+FD1S3IX => 25
+GSR => 1
+IB => 10
+L6MUX21 => 25
+LUT4 => 635
+MULT2 => 16
+OB => 25
+PFUMX => 89
+SPR16X4C => 32
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 4
+  Net : ISA/CLKin, loads : 106
+  Net : clk_div/clk, loads : 44
+  Net : controllerIO/demuxOut/Q_N_404, loads : 2
+  Net : Q_N_404, loads : 2
+Clock Enable Nets
+Number of Clock Enables: 15
+Top 10 highest fanout Clock Enables:
+  Net : CLKin_enable_80, loads : 7
+  Net : flipflop2/clk_enable_1, loads : 3
+  Net : flipflop1/clk_enable_4, loads : 3
+  Net : flipflop2/clk_enable_3, loads : 1
+  Net : CLKin_enable_25, loads : 1
+  Net : CLKin_enable_48, loads : 1
+  Net : CLKin_enable_18, loads : 1
+  Net : CLKin_enable_62, loads : 1
+  Net : CLKin_enable_76, loads : 1
+  Net : CLKin_enable_69, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : uPC/out_uPC_0, loads : 88
+  Net : controllerIO/compOut/n8570, loads : 71
+  Net : buffer11/n8561, loads : 67
+  Net : uPC/out_uPC_2, loads : 62
+  Net : uPC/out_uPC_3, loads : 61
+  Net : uPC/out_uPC_1, loads : 60
+  Net : ISA/n8578, loads : 56
+  Net : uPC/out_uPC_5, loads : 46
+  Net : uPC/out_uPC_6, loads : 43
+  Net : uPC/out_uPC_4, loads : 42
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk]                     |  200.000 MHz|   94.482 MHz|     6 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets CLKin]                   |  200.000 MHz|   23.713 MHz|    26 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 96.012  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.703  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "FLiP01_main.ngd" -o "FLiP01_main_map.ncd" -pr "FLiP01_main.prf" -mp "FLiP01_main.mrp" -lpf "C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/main/FLiP01_main.lpf" -lpf "C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/FLiP01.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: FLiP01_main.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 4.
+
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.39.
+
+Running general design DRC...
+
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[7]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[6]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[5]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[4]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[3]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[2]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[1]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="in1[0]"  />
+Removing unused logic...
+
+Optimizing...
+
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="in1[7:0](7)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="in1[7:0](6)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="in1[7:0](5)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="in1[7:0](4)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="in1[7:0](3)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="in1[7:0](2)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="in1[7:0](1)"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="in1[7:0](0)"  />
+
+
+
+Design Summary:
+   Number of registers:    114 out of  7209 (2%)
+      PFU registers:          114 out of  6864 (2%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:       510 out of  3432 (15%)
+      SLICEs as Logic/ROM:    414 out of  3432 (12%)
+      SLICEs as RAM:           96 out of  2574 (4%)
+      SLICEs as Carry:         93 out of  3432 (3%)
+   Number of LUT4s:        1019 out of  6864 (15%)
+      Number used as logic LUTs:        641
+      Number used as distributed RAM:   192
+      Number used as ripple logic:      186
+      Number used as shift registers:     0
+   Number of PIO sites used: 35 + 4(JTAG) out of 115 (34%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  4
+     Net CLKin: 58 loads, 58 rising, 0 falling (Driver: ISA/i826_3_lut_4_lut )
+     Net clk: 70 loads, 70 rising, 0 falling (Driver: clk_div/clk_out_12 )
+     Net Q_N_404: 1 loads, 1 rising, 0 falling (Driver: i2_3_lut_4_lut )
+     Net Q_N_404_adj_572: 1 loads, 1 rising, 0 falling (Driver: controllerIO/demuxOut/i5_4_lut )
+   Number of Clock Enables:  13
+     Net CLKin_enable_25: 4 loads, 4 LSLICEs
+     Net CLKin_enable_29: 4 loads, 4 LSLICEs
+     Net CLKin_enable_69: 4 loads, 4 LSLICEs
+     Net CLKin_enable_76: 5 loads, 5 LSLICEs
+     Net CLKin_enable_55: 4 loads, 4 LSLICEs
+     Net in_reg_sel_0: 2 loads, 2 LSLICEs
+     Net CLKin_enable_41: 2 loads, 2 LSLICEs
+     Net CLKin_enable_62: 4 loads, 4 LSLICEs
+     Net CLKin_enable_18: 4 loads, 4 LSLICEs
+     Net CLKin_enable_80: 9 loads, 9 LSLICEs
+     Net CLKin_enable_48: 4 loads, 4 LSLICEs
+     Net flipflop2/clk_enable_1: 2 loads, 2 LSLICEs
+     Net flipflop1/clk_enable_4: 2 loads, 2 LSLICEs
+   Number of LSRs:  6
+     Net n2073: 13 loads, 13 LSLICEs
+     Net Q_N_404: 1 loads, 1 LSLICEs
+     Net Q_N_404_adj_572: 1 loads, 1 LSLICEs
+     Net out1_0__N_2: 2 loads, 2 LSLICEs
+     Net n33: 3 loads, 3 LSLICEs
+     Net n8536: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net MEM1_addr_0: 160 loads
+     Net MEM1_addr_1: 160 loads
+     Net MEM1_addr_2: 160 loads
+     Net MEM1_addr_3: 160 loads
+     Net out_uPC_0: 89 loads
+     Net n8570: 73 loads
+     Net n8561: 68 loads
+     Net out_uPC_2: 63 loads
+     Net out_uPC_3: 62 loads
+     Net out_uPC_1: 61 loads
+ 
+
+   Number of warnings:  16
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 66 MB
+
+Dumping design to file FLiP01_main_map.ncd.
+
+ncd2vdb "FLiP01_main_map.ncd" ".vdbs/FLiP01_main_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+
+mpartrce -p "FLiP01_main.p2t" -f "FLiP01_main.p3t" -tf "FLiP01_main.pt" "FLiP01_main_map.ncd" "FLiP01_main.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "FLiP01_main_map.ncd"
+Sat Nov 30 17:58:10 2024
+
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 FLiP01_main_map.ncd FLiP01_main.dir/5_1.ncd FLiP01_main.prf
+Preference file: FLiP01_main.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file FLiP01_main_map.ncd.
+Design name: FLIP
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 36.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   35+4(JTAG)/336     12% used
+                  35+4(JTAG)/115     34% bonded
+
+   SLICE            510/3432         14% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 1321
+Number of Connections: 4454
+
+Pin Constraint Summary:
+   27 out of 35 pins locked (77% locked).
+
+The following 2 signals are selected to use the primary clock routing resources:
+    clk (driver: SLICE_209, clk load #: 70)
+    CLKin (driver: ISA/SLICE_374, clk load #: 58)
+
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    n2073 (driver: SLICE_359, clk load #: 0, sr load #: 13, ce load #: 0)
+
+Signal reset_c is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+..............
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+........................
+Placer score = 241108.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  240255
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clk" from Q0 on comp "SLICE_209" on site "R2C19A", clk load = 70
+  PRIMARY "CLKin" from F0 on comp "ISA/SLICE_374" on site "R21C2C", clk load = 58
+  SECONDARY "n2073" from F1 on comp "SLICE_359" on site "R21C20C", clk load = 0, ce load = 0, sr load = 13
+
+  PRIMARY  : 2 out of 8 (25%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   35 + 4(JTAG) out of 336 (11.6%) PIO sites used.
+   35 + 4(JTAG) out of 115 (33.9%) bonded PIO sites used.
+   Number of PIO comps: 35; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 8 / 28 ( 28%)  | 2.5V       | -         |
+| 1        | 10 / 29 ( 34%) | 2.5V       | -         |
+| 2        | 8 / 29 ( 27%)  | 2.5V       | -         |
+| 3        | 2 / 9 ( 22%)   | 2.5V       | -         |
+| 4        | 1 / 10 ( 10%)  | 2.5V       | -         |
+| 5        | 6 / 10 ( 60%)  | 2.5V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file FLiP01_main.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 4454 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=Q_N_404 loads=2 clock_loads=1&#xA;   Signal=Q_N_404_adj_572 loads=2 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 5 secs 
+
+Start NBR router at 17:58:15 11/30/24
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 17:58:15 11/30/24
+
+Start NBR section for initial routing at 17:58:15 11/30/24
+Level 4, iteration 1
+97(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 17:58:16 11/30/24
+Level 4, iteration 1
+45(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+Level 4, iteration 2
+19(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+Level 4, iteration 3
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+Level 4, iteration 4
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+Level 4, iteration 5
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Start NBR section for re-routing at 17:58:16 11/30/24
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Start NBR section for post-routing at 17:58:16 11/30/24
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=Q_N_404 loads=2 clock_loads=1&#xA;   Signal=Q_N_404_adj_572 loads=2 clock_loads=1"  />
+
+Total CPU time 3 secs 
+Total REAL time: 6 secs 
+Completely routed.
+End of route.  4454 routed (100.00%); 0 unrouted.
+
+6 potential circuit loops found in timing analysis.
+6 potential circuit loops found in timing analysis.
+Hold time timing score: 0, hold timing errors: 0
+
+6 potential circuit loops found in timing analysis.
+Timing score: 0 
+
+Dumping design to file FLiP01_main.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 3 secs 
+Total REAL time to completion: 7 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "FLiP01_main.pt" -o "FLiP01_main.twr" "FLiP01_main.ncd" "FLiP01_main.prf"
+trce:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file flip01_main.ncd.
+Design name: FLIP
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 36.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Sat Nov 30 17:58:18 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FLiP01_main.twr -gui -msgset C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/promote.xml FLiP01_main.ncd FLiP01_main.prf 
+Design file:     flip01_main.ncd
+Preference file: flip01_main.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+6 potential circuit loops found in timing analysis.
+6 potential circuit loops found in timing analysis.
+6 potential circuit loops found in timing analysis.
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 9565  Score: 2824703298
+Cumulative negative slack: 2824703298
+
+Constraints cover 14152316 paths, 16 nets, and 4416 connections (99.15% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Sat Nov 30 17:58:19 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o FLiP01_main.twr -gui -msgset C:/Users/croci/OneDrive/Desktop/FLIP/FLiPGA01/promote.xml FLiP01_main.ncd FLiP01_main.prf 
+Design file:     flip01_main.ncd
+Preference file: flip01_main.prf
+Device,speed:    LCMXO2-7000HE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+6 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 2298  Score: 5837049
+Cumulative negative slack: 5837049
+
+Constraints cover 14152316 paths, 16 nets, and 4416 connections (99.15% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 9565 (setup), 2298 (hold)
+Score: 2824703298 (setup), 5837049 (hold)
+Cumulative negative slack: 2830540347 (2824703298+5837049)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 1 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 81 MB
+
+
+tmcheck -par "FLiP01_main.par" 
+
+bitgen -f "FLiP01_main.t2b" -w "FLiP01_main.ncd"  "FLiP01_main.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.14.0.75.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file FLiP01_main.ncd.
+Design name: FLIP
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 36.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from FLiP01_main.prf.
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###"  />
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK"  />
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "FLiP01_main.bit".
+Total CPU Time: 1 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 294 MB
