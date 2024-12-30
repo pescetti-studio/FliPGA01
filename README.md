@@ -135,7 +135,6 @@ The three Flip01 updates: "_It’s Dangerous to Go Alone! Take This_", "_Instruc
 
 ![glorious evolution](https://github.com/user-attachments/assets/6c70be91-aeeb-42a0-9085-5b757b866a16)
 
-The entire project is free, open-source, and accessible through [this GitHub repository](https://github.com/pescetti-studio/FliPGA01).
 
 Do you like this stuff? </br>
 Support us with a [donation on PayPal](https://paypal.me/PescettiStudio?country.x=IT&locale.x=it_IT)! </br>
